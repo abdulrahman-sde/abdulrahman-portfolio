@@ -10,14 +10,30 @@ export default function Home() {
   return (
     <Container>
       <HeroSection />
-      <Separator />
+      <Separator
+        className="animate-fade-in"
+        style={{ animationDelay: "80ms" }}
+      />
       <AboutSection />
-      <Separator />
-      <SkillsSection />
-      <Separator />
+      <Separator
+        className="animate-fade-in"
+        style={{ animationDelay: "240ms" }}
+      />
+      <div className="animate-fade-up" style={{ animationDelay: "320ms" }}>
+        <SkillsSection />
+      </div>
+      <Separator
+        className="animate-fade-in"
+        style={{ animationDelay: "400ms" }}
+      />
       <ExperienceSection />
-      <Separator />
-      <ContactSection />
+      <Separator
+        className="animate-fade-in"
+        style={{ animationDelay: "560ms" }}
+      />
+      <div className="animate-fade-up" style={{ animationDelay: "640ms" }}>
+        <ContactSection />
+      </div>
     </Container>
   );
 }

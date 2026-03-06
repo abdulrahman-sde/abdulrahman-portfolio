@@ -1,7 +1,7 @@
 import type { NavItem, SocialLink } from "@/types/social";
 
 export const siteConfig = {
-  name: "Abdulrahman",
+  name: "Abdul Rahman",
   title: "Abdulrahman — Developer",
   description:
     "Full-stack developer building thoughtful, well-crafted web experiences.",

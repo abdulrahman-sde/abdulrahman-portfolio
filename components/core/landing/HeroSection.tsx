@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { siteConfig, socialLinks } from "@/constants/site";
 import { Button } from "@/components/ui/Button";
+import RaisedButton from "@/components/ui/RaisedBtn";
 
 export function HeroSection() {
   return (
@@ -52,9 +53,7 @@ export function HeroSection() {
             className="animate-fade-up mt-8 flex flex-wrap items-center gap-3"
             style={{ animationDelay: "320ms" }}
           >
-            <Button href="/projects" variant="default">
-              View Projects
-            </Button>
+            <RaisedButton>View Projects</RaisedButton>
             <Button href="/blog" variant="outline">
               Read Blog
             </Button>

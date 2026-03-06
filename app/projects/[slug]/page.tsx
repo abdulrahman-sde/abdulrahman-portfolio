@@ -32,25 +32,39 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <Container className="py-16">
-      <div className="mb-2">
+      <div className="animate-fade-up mb-2" style={{ animationDelay: "0ms" }}>
         <Button href="/projects" variant="link" className="text-xs">
           &larr; All Projects
         </Button>
       </div>
 
-      <h1 className="text-3xl font-medium tracking-tight sm:text-4xl">
+      <h1
+        className="animate-fade-up text-3xl font-medium tracking-tight sm:text-4xl"
+        style={{ animationDelay: "80ms" }}
+      >
         {project.title}
       </h1>
-      <p className="mt-2 text-sm text-muted-foreground">{project.year}</p>
+      <p
+        className="animate-fade-up mt-2 text-sm text-muted-foreground"
+        style={{ animationDelay: "160ms" }}
+      >
+        {project.year}
+      </p>
 
-      <div className="mt-4 flex flex-wrap gap-1.5">
+      <div
+        className="animate-fade-up mt-4 flex flex-wrap gap-1.5"
+        style={{ animationDelay: "240ms" }}
+      >
         {project.tech.map((t) => (
           <Badge key={t}>{t}</Badge>
         ))}
       </div>
 
       {(project.link || project.github) && (
-        <div className="mt-6 flex items-center gap-3">
+        <div
+          className="animate-fade-up mt-6 flex items-center gap-3"
+          style={{ animationDelay: "320ms" }}
+        >
           {project.link && (
             <Button href={project.link} variant="default" external>
               Live Demo
@@ -79,7 +93,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
       <div className="mt-12 space-y-4 text-muted-foreground leading-relaxed">
         {project.longDescription.split("\n\n").map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
+          <p
+            key={i}
+            className="animate-fade-up"
+            style={{ animationDelay: `${400 + i * 80}ms` }}
+          >
+            {paragraph}
+          </p>
         ))}
       </div>
     </Container>

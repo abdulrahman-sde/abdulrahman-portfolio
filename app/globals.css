@@ -95,9 +95,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth scrolling */
+/* Keep route-change scroll jumps instant (no upward animation between pages) */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 /* Selection color */

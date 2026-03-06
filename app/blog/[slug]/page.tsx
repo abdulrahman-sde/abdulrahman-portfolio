@@ -34,29 +34,41 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <Container className="py-16">
-      <div className="mb-2">
+      <div className="animate-fade-up mb-2" style={{ animationDelay: "0ms" }}>
         <Button href="/blog" variant="link" className="text-xs">
           &larr; All Posts
         </Button>
       </div>
 
-      <h1 className="text-3xl font-medium tracking-tight sm:text-4xl">
+      <h1
+        className="animate-fade-up text-3xl font-medium tracking-tight sm:text-4xl"
+        style={{ animationDelay: "80ms" }}
+      >
         {post.title}
       </h1>
 
-      <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+      <div
+        className="animate-fade-up mt-3 flex flex-wrap items-center gap-3 text-sm text-muted-foreground"
+        style={{ animationDelay: "160ms" }}
+      >
         <time dateTime={post.date}>{formatDate(post.date)}</time>
         <span>·</span>
         <span>{post.readingTime}</span>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-1.5">
+      <div
+        className="animate-fade-up mt-4 flex flex-wrap gap-1.5"
+        style={{ animationDelay: "240ms" }}
+      >
         {post.tags.map((tag) => (
           <Badge key={tag}>{tag}</Badge>
         ))}
       </div>
 
-      <Separator className="my-8" />
+      <Separator
+        className="animate-fade-in my-8"
+        style={{ animationDelay: "320ms" }}
+      />
 
       <article className="prose-custom space-y-5 text-foreground/85 leading-[1.75]">
         {post.content.split("\n\n").map((block, i) => {
@@ -64,7 +76,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             return (
               <h2
                 key={i}
-                className="mt-10 mb-4 font-serif text-xl font-medium text-foreground"
+                className="animate-fade-up mt-10 mb-4 font-serif text-xl font-medium text-foreground"
+                style={{ animationDelay: `${400 + i * 80}ms` }}
               >
                 {block.replace("## ", "")}
               </h2>
@@ -73,7 +86,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           if (block.startsWith("1. ") || block.match(/^\d+\.\s/)) {
             const items = block.split("\n").filter(Boolean);
             return (
-              <ol key={i} className="list-decimal pl-5 space-y-1">
+              <ol
+                key={i}
+                className="animate-fade-up list-decimal pl-5 space-y-1"
+                style={{ animationDelay: `${400 + i * 80}ms` }}
+              >
                 {items.map((item, j) => (
                   <li key={j}>{item.replace(/^\d+\.\s/, "")}</li>
                 ))}
@@ -83,14 +100,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           if (block.startsWith("- ")) {
             const items = block.split("\n").filter(Boolean);
             return (
-              <ul key={i} className="list-disc pl-5 space-y-1">
+              <ul
+                key={i}
+                className="animate-fade-up list-disc pl-5 space-y-1"
+                style={{ animationDelay: `${400 + i * 80}ms` }}
+              >
                 {items.map((item, j) => (
                   <li key={j}>{item.replace(/^-\s/, "")}</li>
                 ))}
               </ul>
             );
           }
-          return <p key={i}>{block}</p>;
+          return (
+            <p
+              key={i}
+              className="animate-fade-up"
+              style={{ animationDelay: `${400 + i * 80}ms` }}
+            >
+              {block}
+            </p>
+          );
         })}
       </article>
     </Container>

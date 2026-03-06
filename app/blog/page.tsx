@@ -17,14 +17,25 @@ export default function BlogPage() {
 
   return (
     <Container className="py-16">
-      <SectionHeader label="Writing" title="Blog" />
-      <p className="mb-10 max-w-md text-muted-foreground leading-relaxed">
+      <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
+        <SectionHeader label="Writing" title="Blog" />
+      </div>
+      <p
+        className="animate-fade-up mb-10 max-w-md text-muted-foreground leading-relaxed"
+        style={{ animationDelay: "80ms" }}
+      >
         Thoughts on code, design, and the craft of building software.
       </p>
 
       <div>
-        {sorted.map((post) => (
-          <BlogCard key={post.slug} post={post} />
+        {sorted.map((post, i) => (
+          <div
+            key={post.slug}
+            className="animate-fade-up"
+            style={{ animationDelay: `${160 + i * 80}ms` }}
+          >
+            <BlogCard post={post} />
+          </div>
         ))}
       </div>
     </Container>
