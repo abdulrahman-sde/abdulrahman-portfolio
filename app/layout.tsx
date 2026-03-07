@@ -6,6 +6,7 @@ import {
 } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { siteConfig } from "@/constants/site";
 import "./globals.css";
 
@@ -36,15 +37,6 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 };
 
-const themeScript = `
-  (function() {
-    var t = localStorage.getItem('theme');
-    if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-  })();
-`;
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,15 +44,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
       <body
         className={`${sans.variable} ${serif.variable} ${mono.variable} font-sans antialiased`}
       >
-        <Navbar />
-        <main className="min-h-[calc(100dvh-3.5rem)]">{children}</main>
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          <main className="min-h-[calc(100dvh-3.5rem)]">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
