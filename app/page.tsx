@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/core/landing/HeroSection";
 import { AboutSection } from "@/components/core/landing/AboutSection";
 import { SkillsSection } from "@/components/core/landing/SkillsSection";
 import { ExperienceSection } from "@/components/core/landing/ExperienceSection";
+import { FeaturedProjectsSection } from "@/components/core/landing/FeaturedProjectsSection";
 import { ContactSection } from "@/components/core/landing/ContactSection";
 
 export default function Home() {
@@ -31,7 +32,12 @@ export default function Home() {
         className="animate-fade-in"
         style={{ animationDelay: "560ms" }}
       />
-      <div className="animate-fade-up" style={{ animationDelay: "640ms" }}>
+      <FeaturedProjectsSection />
+      <Separator
+        className="animate-fade-in"
+        style={{ animationDelay: "720ms" }}
+      />
+      <div className="animate-fade-up" style={{ animationDelay: "800ms" }}>
         <ContactSection />
       </div>
     </Container>

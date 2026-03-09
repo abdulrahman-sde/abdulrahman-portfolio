@@ -15,7 +15,7 @@ export function Navbar() {
           {siteConfig.name}
         </Link>
 
-        <nav className="flex items-center gap-1">
+        <nav className="flex items-center">
           <NavLinks />
           <div className="ml-2 border-l border-border pl-2">
             <ThemeToggle />

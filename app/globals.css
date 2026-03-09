@@ -46,7 +46,7 @@
 
 /* ─── Design System: Dark ────────────────────────────── */
 .dark {
-  --background: oklch(21.033% 0.00588 285.832);
+  --background: #18181b;
   --foreground: #e7e5e4;
   --card: #1c1917;
   --card-foreground: #e7e5e4;
@@ -87,7 +87,7 @@ body {
   background-color: var(--background);
   background-image: url("/noise.png");
   z-index: -1;
-  background-size: 100px 100px;
+  background-size: 130px 130px;
   background-position: 0 0;
   color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;

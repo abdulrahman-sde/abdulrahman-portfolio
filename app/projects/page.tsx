@@ -6,7 +6,8 @@ import { projects } from "@/constants/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Things I've built — side projects, tools, and experiments.",
+  description:
+    "Full-stack and AI projects — from agentic pipelines and RAG systems to mobile apps and VS Code themes.",
 };
 
 export default function ProjectsPage() {
@@ -22,8 +23,8 @@ export default function ProjectsPage() {
         className="animate-fade-up mb-10 max-w-md text-muted-foreground leading-relaxed"
         style={{ animationDelay: "80ms" }}
       >
-        A collection of things I&apos;ve built — some shipped, some
-        experimental, all crafted with care.
+        A collection of things I&apos;ve built — AI agents, full-stack apps,
+        mobile experiences, and developer tools.
       </p>
 
       {featured.length > 0 && (
@@ -31,7 +32,7 @@ export default function ProjectsPage() {
           className="mb-12 animate-fade-up"
           style={{ animationDelay: "160ms" }}
         >
-          <p className="mb-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
             Featured
           </p>
           <div className="grid gap-6 md:grid-cols-2">
@@ -50,8 +51,8 @@ export default function ProjectsPage() {
 
       {other.length > 0 && (
         <div className="animate-fade-up" style={{ animationDelay: "240ms" }}>
-          <p className="mb-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-            Other
+          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+            Other Projects
           </p>
           <div className="grid gap-6 md:grid-cols-2">
             {other.map((project, i) => (

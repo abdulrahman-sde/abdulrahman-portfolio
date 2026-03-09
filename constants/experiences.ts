@@ -2,32 +2,18 @@ import type { Experience } from "@/types/experience";
 
 export const experiences: Experience[] = [
   {
-    company: "Acme Corp",
-    role: "Senior Full-Stack Engineer",
-    period: "2024 — Present",
+    company: "Techloset",
+    role: "Full-Stack & Agentic AI Bootcamp",
+    period: "Nov 2025 — Present",
     description:
-      "Leading frontend architecture for the core product. Built the design system, migrated to Next.js App Router, and reduced bundle size by 40%.",
+      "Delivered 3 production-grade projects across Next.js, MERN, and React Native tracks. Integrated GPT-4o into a live admin dashboard for prompt-to-interface workflows. Currently designing multi-agent pipelines with LangChain and LangGraph.",
     current: true,
   },
   {
-    company: "Nebula Labs",
-    role: "Full-Stack Developer",
-    period: "2022 — 2024",
+    company: "Aivex",
+    role: "Next.js Intern",
+    period: "Apr 2025 — Jun 2025",
     description:
-      "Shipped key features across a React/Node.js SaaS platform. Designed and implemented real-time collaboration features used by 10k+ users.",
-  },
-  {
-    company: "Pixel Studio",
-    role: "Frontend Developer",
-    period: "2021 — 2022",
-    description:
-      "Built responsive, accessible interfaces for client projects. Worked closely with designers to translate Figma mockups into production code.",
-  },
-  {
-    company: "Freelance",
-    role: "Web Developer",
-    period: "2019 — 2021",
-    description:
-      "Designed and developed websites for small businesses. Focused on performance, SEO, and clean code delivery.",
+      "Developed and maintained scalable frontend features using Next.js for a production application. Integrated REST APIs, implemented CRUD operations, and resolved performance bottlenecks improving page responsiveness across key user flows.",
   },
 ];

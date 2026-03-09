@@ -10,7 +10,8 @@ export function ContactSection() {
     <section className="py-16">
       <SectionHeader label="Contact" title="Get in Touch" />
       <p className="max-w-[42ch] text-sm leading-relaxed text-muted-foreground">
-        Open to interesting conversations, collaborations, or just saying hello.
+        Open to opportunities, collaborations, and interesting conversations
+        about AI, full-stack development, or anything tech.
       </p>
 
       {/* Big email CTA */}
