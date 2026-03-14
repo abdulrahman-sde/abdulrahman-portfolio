@@ -25,7 +25,7 @@ export function HeroSection() {
               {siteConfig.name}
             </h1>
             <p className="mt-1 text-[15px] font-medium text-muted-foreground">
-              Full-Stack Developer
+              Full-Stack Engineer
             </p>
           </div>
         </div>
@@ -36,8 +36,8 @@ export function HeroSection() {
           style={{ animationDelay: "80ms" }}
         >
           <p className="text-[15px] leading-[1.8] text-muted-foreground sm:text-base">
-            I build thoughtful web experiences — clean architecture, considered
-            design, shipped code. Based in Riyadh.
+            I build thoughtful web &amp; app experiences — clean architecture,
+            considered design, shipped code. Based in Lahore.
           </p>
         </div>
 

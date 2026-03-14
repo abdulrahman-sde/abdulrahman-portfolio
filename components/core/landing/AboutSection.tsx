@@ -4,7 +4,7 @@ export function AboutSection() {
   const baseDelay = 480;
 
   return (
-    <section className="py-16">
+    <section className="py-8">
       <div
         className="animate-fade-up"
         style={{ animationDelay: `${baseDelay}ms` }}
@@ -16,46 +16,33 @@ export function AboutSection() {
           className="animate-fade-up"
           style={{ animationDelay: `${baseDelay + 80}ms` }}
         >
-          I&apos;m a full-stack developer and AI enthusiast currently pursuing
-          my BS in Computer Science at GCU Faisalabad with a 3.84 CGPA. I
-          specialize in building intelligent, production-grade web applications
-          using Next.js, React, and Node.js.
+          I&apos;m a Computer Science student at GCU Faisalabad with a strong
+          interest in full-stack engineering and AI.
         </p>
         <p
           className="animate-fade-up"
           style={{ animationDelay: `${baseDelay + 160}ms` }}
         >
-          My recent focus has been on Agentic AI — designing multi-agent
-          pipelines with LangChain and LangGraph, building custom RAG systems,
-          and integrating LLMs into production interfaces. I&apos;ve shipped AI
-          features like GPT-4o–powered product description generation and
-          real-time voice agents with LiveKit.
+          Through Techloset&apos;s Full-Stack & Agentic AI Bootcamp and a
+          hands-on internship at Aivex, I&apos;ve gone from learning the basics
+          to shipping real products. I build end-to-end applications with
+          Next.js, Node.js, and TypeScript, and work at the frontier of AI
+          development with LangChain, LangGraph, and RAG pipelines.
         </p>
         <p
           className="animate-fade-up"
           style={{ animationDelay: `${baseDelay + 240}ms` }}
         >
-          Beyond AI, I have hands-on experience across the full stack — from
-          React Native mobile apps with Supabase and Expo push notifications, to
-          Express backends with Redis session management, JWT rotation, and
-          Prisma ORM. I care deeply about clean architecture, developer
-          experience, and shipping code that works.
+          I care about the full picture: clean architecture, smooth UX, reliable
+          backends, and AI that feels genuinely useful rather than bolted on.
         </p>
+
         <p
           className="animate-fade-up"
           style={{ animationDelay: `${baseDelay + 320}ms` }}
         >
-          When I&apos;m not coding, you&apos;ll find me exploring new AI
-          research, contributing to open-source, or refining my{" "}
-          <a
-            href="https://marketplace.visualstudio.com/items?itemName=Abdulrahmansde.midnight-fusion"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground underline decoration-border underline-offset-[3px] transition-colors duration-150 hover:decoration-foreground"
-          >
-            Midnight Fusion
-          </a>{" "}
-          VS Code theme.
+          If you&apos;re building something worth building or just want to talk
+          tech, AI, or ideas, I&apos;d genuinely love to connect.
         </p>
       </div>
     </section>

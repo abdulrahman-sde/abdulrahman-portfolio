@@ -15,12 +15,19 @@ export function ProjectCard({ project }: ProjectCardProps) {
         href={`/projects/${project.slug}`}
         className="relative h-44 w-full overflow-hidden bg-muted block"
       >
-        <Image
+        {/* <Image
           src={project.image}
           alt={project.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-        />
+        /> */}
+        <video
+          src="/assets/videos/ai-resume-analyzer-retro.mp4"
+          autoPlay={true}
+          loop={true}
+          width={300}
+          className="-mt-12"
+        ></video>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
         {/* Badges overlay on hover */}
