@@ -62,9 +62,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         {/* Header Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="">
           {/* Hero Image (Left Side) */}
-          <div
+          {/* <div
             className="animate-fade-up order-2 lg:order-1 relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-muted/30 shadow-sm"
             style={{ animationDelay: "150ms" }}
           >
@@ -75,11 +75,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               className="object-cover"
               priority
             />
-          </div>
+          </div> */}
 
           {/* Content (Right Side) */}
           <div
-            className="animate-fade-up order-1 lg:order-2 max-w-xl"
+            className="animate-fade-up order-1 lg:order-2"
             style={{ animationDelay: "80ms" }}
           >
             <div className="mb-4 flex items-center gap-3">
@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </span>
             </div>
 
-            <h1 className="font-serif text-3xl md:text-4xl italic tracking-tight text-foreground text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl  tracking-tight text-foreground text-balance">
               {project.title}
             </h1>
 
@@ -135,7 +135,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         >
           {/* Features / Details */}
           <div>
-            <h2 className="font-serif text-2xl italic tracking-tight text-foreground">
+            <h2 className="font-serif text-2xl  tracking-tight text-foreground">
               Key Features
             </h2>
             <div className="mt-8 space-y-4">
@@ -166,7 +166,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           {/* Tech Stack Sidebar */}
           <div>
-            <h3 className="font-serif text-xl italic tracking-tight text-foreground">
+            <h3 className="font-serif text-xl  tracking-tight text-foreground">
               Tech Stack
             </h3>
             <div className="mt-6 flex flex-wrap gap-2">

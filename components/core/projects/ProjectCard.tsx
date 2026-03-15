@@ -10,27 +10,20 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="flex h-full flex-col overflow-hidden rounded-xl border border-border bg-[url(/noise.png)] bg-size-[auto_100px] dark:bg-background transition-all duration-300">
-      {/* ── Image ────────────────────────────────────── */}
       <Link
         href={`/projects/${project.slug}`}
-        className="relative h-44 w-full overflow-hidden bg-muted block"
+        className="relative  overflow-hidden bg-muted block aspect-3/2"
       >
-        {/* <Image
+        <Image
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-        /> */}
-        <video
-          src="/assets/videos/ai-resume-analyzer-retro.mp4"
-          autoPlay={true}
-          loop={true}
-          width={300}
-          className="-mt-12"
-        ></video>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          placeholder="blur"
+          className=" object-cover transition-transform duration-500  group-hover:scale-[1.03] w-full"
+        />
 
-        {/* Badges overlay on hover */}
+        <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-background/30 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
         {project.isApp && (
           <div className="absolute right-3 top-3">
             <span className="inline-flex items-center rounded-full bg-foreground/80 px-2 py-0.5 text-[10px] font-semibold text-background backdrop-blur-sm">
@@ -40,9 +33,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         )}
       </Link>
 
-      {/* ── Content ──────────────────────────────────── */}
       <div className="flex flex-1 flex-col p-5">
-        {/* Title & arrow */}
         <div className="flex items-start justify-between gap-2">
           <Link
             href={`/projects/${project.slug}`}
@@ -73,7 +64,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </Link>
         </div>
 
-        {/* Description */}
         <p className="mt-2 line-clamp-2 text-[13px] leading-relaxed text-muted-foreground">
           {project.description}
         </p>

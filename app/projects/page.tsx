@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
-  const featured = projects.filter((p) => p.featured);
-  const other = projects.filter((p) => !p.featured);
+  // const featured = projects.filter((p) => p.featured);
+  // const other = projects.filter((p) => !p.featured);
 
   return (
     <Container className="py-16">
@@ -27,46 +27,22 @@ export default function ProjectsPage() {
         mobile experiences, and developer tools.
       </p>
 
-      {featured.length > 0 && (
-        <div
-          className="mb-12 animate-fade-up"
-          style={{ animationDelay: "160ms" }}
-        >
-          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-            Featured
-          </p>
-          <div className="grid gap-6 md:grid-cols-2">
-            {featured.map((project, i) => (
-              <div
-                key={project.slug}
-                className="animate-fade-up"
-                style={{ animationDelay: `${240 + i * 80}ms` }}
-              >
-                <ProjectCard project={project} />
-              </div>
-            ))}
-          </div>
+      <div
+        className="mb-12 animate-fade-up"
+        style={{ animationDelay: "160ms" }}
+      >
+        <div className="grid gap-6 md:grid-cols-2">
+          {projects.map((project, i) => (
+            <div
+              key={project.slug}
+              className="animate-fade-up"
+              style={{ animationDelay: `${240 + i * 80}ms` }}
+            >
+              <ProjectCard project={project} />
+            </div>
+          ))}
         </div>
-      )}
-
-      {other.length > 0 && (
-        <div className="animate-fade-up" style={{ animationDelay: "240ms" }}>
-          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-            Other Projects
-          </p>
-          <div className="grid gap-6 md:grid-cols-2">
-            {other.map((project, i) => (
-              <div
-                key={project.slug}
-                className="animate-fade-up"
-                style={{ animationDelay: `${320 + i * 80}ms` }}
-              >
-                <ProjectCard project={project} />
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      </div>
     </Container>
   );
 }

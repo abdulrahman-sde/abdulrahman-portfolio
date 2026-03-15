@@ -1,4 +1,13 @@
 import type { Project } from "@/types/project";
+import healthpalImg from "@/public/assets/images/healthpal-l.png";
+import chatappImg from "@/public/assets/images/chatapp-l.png";
+import dealportImg from "@/public/assets/images/dealport-l.png";
+import foodmanImg from "@/public/assets/images/foodman-l.png";
+import logoaiImg from "@/public/assets/images/logo-ai-l.png";
+import meditrackImg from "@/public/assets/images/meditrack-l.png";
+import storeitImg from "@/public/assets/images/store-it-l.png";
+import talkwithpdfImg from "@/public/assets/images/talkwithpdf-l.png";
+import unrollaiImg from "@/public/assets/images/unroll-ai-l.png";
 
 export const projects: Project[] = [
   // ── AI & Full-Stack (High Complexity) ────────────────────────
@@ -7,7 +16,7 @@ export const projects: Project[] = [
     title: "AI Resume Analyzer",
     description:
       "An intelligent Resume Analyzer Agent that evaluates candidate resumes and provides structured hiring recommendations with a real-time voice agent. Features resume parsing, scoring logic, explainable decisions, a chatbot for queries, and a live voice agent powered by LiveKit, Deepgram, OpenAI, and ElevenLabs.",
-    image: "/assets/images/resume-analyzer.svg",
+    image: unrollaiImg,
     liveUrl: "https://unroll-ai-resume-analyzer.vercel.app/",
     githubUrl: "https://github.com/bootcampwise/Ai-resume-analyzer.git",
     technologies: [
@@ -27,14 +36,38 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "chat-with-pdfs",
+    title: "Talk with PDFs",
+    description:
+      "An AI document assistant with a custom RAG pipeline built from scratch — no LangChain — using Vercel AI SDK and pgvector. Streams AI responses directly into a chat UI with per-locument conversation state. Inngest background jobs automate PDF parsing and embedding generation.",
+    image: talkwithpdfImg,
+    liveUrl: "https://talkwithpdfs.vercel.app/",
+    githubUrl: "https://github.com/abdulrahman-sde/talk-with-pdfs",
+    technologies: [
+      { name: "Next.js 15", icon: "/assets/icons/nextjs2.svg" },
+      { name: "Postgres", icon: "/assets/icons/postgres.png" },
+      { name: "OpenAI", icon: "/assets/icons/openai.svg" },
+      { name: "Vercel AI SDK", icon: "/assets/icons/ai-sdk.png" },
+      { name: "Inngest", icon: "/assets/icons/inngest.png" },
+    ],
+    features: [
+      "Custom RAG pipeline with pgvector — no LangChain",
+      "Streaming AI responses in real-time chat UI",
+      "Per-locument conversation state management",
+      "Background PDF parsing & embedding generation via Inngest",
+      "Contextual answers using OpenAI + Vercel AI SDK",
+    ],
+    featured: true,
+  },
+  {
     slug: "dealport",
     title: "DealPort",
     description:
       "A full-stack E-Commerce Admin Dashboard with a GPT-4o 'Magic Wand' that translates product names into polished, SEO-ready descriptions. Features a decoupled React/TypeScript frontend and Node.js/Express backend with strict layered architecture, Zod validation, Redis session tracking, and JWT rotation.",
-    image: "/assets/images/dealport.svg",
+    image: dealportImg,
     liveUrl: "https://dealport-frontened-powy.vercel.app/",
     githubUrl:
-      "https://github.com/bootcampwise/Dealport---Ecommerce-Admin-Dashboard-.git",
+      "https://github.com/bootcampwise/Dealport---Ecommerce-Admin-lashboard-.git",
     technologies: [
       { name: "React", icon: "/assets/icons/react.svg" },
       { name: "TypeScript", icon: "/assets/icons/typescript.svg" },
@@ -51,38 +84,16 @@ export const projects: Project[] = [
     ],
     featured: true,
   },
-  {
-    slug: "chat-with-pdfs",
-    title: "Talk with PDFs",
-    description:
-      "An AI document assistant with a custom RAG pipeline built from scratch — no LangChain — using Vercel AI SDK and pgvector. Streams AI responses directly into a chat UI with per-document conversation state. Inngest background jobs automate PDF parsing and embedding generation.",
-    image: "/assets/images/chat-pdf.svg",
-    liveUrl: "https://talkwithpdfs.vercel.app/",
-    githubUrl: "https://github.com/abdulrahman-sde/talk-with-pdfs",
-    technologies: [
-      { name: "Next.js 15", icon: "/assets/icons/nextjs2.svg" },
-      { name: "Postgres", icon: "/assets/icons/postgres.png" },
-      { name: "OpenAI", icon: "/assets/icons/openai.svg" },
-      { name: "Vercel AI SDK", icon: "/assets/icons/ai-sdk.png" },
-      { name: "Inngest", icon: "/assets/icons/inngest.png" },
-    ],
-    features: [
-      "Custom RAG pipeline with pgvector — no LangChain",
-      "Streaming AI responses in real-time chat UI",
-      "Per-document conversation state management",
-      "Background PDF parsing & embedding generation via Inngest",
-      "Contextual answers using OpenAI + Vercel AI SDK",
-    ],
-    featured: true,
-  },
+
   {
     slug: "healthpal",
     title: "HealthPal",
     description:
       "A cross-platform React Native mobile app for doctor appointments with distinct doctor/patient role flows: booking, acceptance, rescheduling, and cancellation. Features Supabase for serverless auth & database, Redux Toolkit for global state, and Expo push notifications.",
-    image: "/assets/images/healthpal.svg",
+    image: healthpalImg,
+
     githubUrl:
-      "https://github.com/bootcampwise/Healthpal--Doctor-Appointment-App.git",
+      "https://github.com/bootcampwise/Healthpal--loctor-Appointment-App.git",
     technologies: [
       { name: "React Native", icon: "/assets/icons/expo.svg" },
       { name: "Supabase", icon: "/assets/icons/supabase.svg" },
@@ -107,7 +118,8 @@ export const projects: Project[] = [
     title: "LogoAI",
     description:
       "An AI-powered logo generation platform with an end-to-end prompt-to-UI pipeline. User intent is enhanced through a prompt layer, sent to Gemini API + Pollinations AI, and rendered as a downloadable logo directly in the interface.",
-    image: "/assets/images/logoai.svg",
+    image: logoaiImg,
+
     liveUrl: "https://logo-generator-tau.vercel.app/",
     githubUrl: "https://github.com/abdulrahman-sde/logo-generator.git",
     technologies: [
@@ -130,7 +142,7 @@ export const projects: Project[] = [
     title: "StoreIt",
     description:
       "A Google Drive–inspired file management platform powered by Next.js 15. Features automatic categorization, smart dashboard with upload limits and usage statistics, efficient search, and seamless file uploads.",
-    image: "/assets/images/storeit.svg",
+    image: storeitImg,
     liveUrl: "https://store-it-flame.vercel.app/",
     githubUrl: "https://github.com/abdulrehman-codecrafter/storeIt.git",
     technologies: [
@@ -152,8 +164,8 @@ export const projects: Project[] = [
     title: "AstraBot",
     description:
       "An advanced AI-powered chatbot built with Next.js 15 that delivers intelligent, context-aware responses. Maintains full conversation context, stores chat history in MongoDB, and uses Clerk for secure authentication.",
-    image: "/assets/images/astrabot.svg",
-    liveUrl: "https://astra-chatbot-peach.vercel.app/",
+    image: healthpalImg,
+    githubUrlFrontend: "https://astra-chatbot-peach.vercel.app/",
     githubUrl: "https://github.com/abdulrehman-codecrafter/astra-chatbot.git",
     technologies: [
       { name: "Next.js 15", icon: "/assets/icons/nextjs2.svg" },
@@ -177,7 +189,7 @@ export const projects: Project[] = [
     title: "ChatApp",
     description:
       "A real-time mobile chat application built with React Native. Features friend requests, instant messaging via WebSockets, and persistent chat history stored in MongoDB.",
-    image: "/assets/images/chatapp.svg",
+    image: chatappImg,
     githubUrl:
       "https://github.com/abdulrehman-codecrafter/chatapp-backened.git",
     githubUrlFrontend:
@@ -202,7 +214,8 @@ export const projects: Project[] = [
     title: "Foodman",
     description:
       "A streamlined food ordering application for a local restaurant with an admin dashboard, order history, real-time order status tracking, and a responsive design that adapts across all devices.",
-    image: "/assets/images/foodman.svg",
+    image: foodmanImg,
+
     liveUrl: "https://hackathon-1e232.web.app/",
     githubUrl:
       "https://github.com/abdulrehman-codecrafter/Saylai-Hackathon.git",
@@ -224,7 +237,8 @@ export const projects: Project[] = [
     title: "Meditrack",
     description:
       "A comprehensive medical store billing web app for pharmacies. Features sales analytics, inventory management, automated invoice generation, and a responsive interface built with Next.js and Firebase.",
-    image: "/assets/images/meditrack.svg",
+    image: meditrackImg,
+
     liveUrl: "https://store-billing.web.app/",
     githubUrl: "https://github.com/abdulrehman-codecrafter/medical-store.git",
     technologies: [
@@ -245,7 +259,7 @@ export const projects: Project[] = [
     title: "Midnight Fusion",
     description:
       "A meticulously designed VS Code theme combining deep dark tones with vibrant highlights. Optimized for readability and reduced eye strain with custom syntax highlighting for popular languages.",
-    image: "/assets/images/midnight.svg",
+    image: healthpalImg,
     liveUrl:
       "https://marketplace.visualstudio.com/items?itemName=Abdulrahmansde.midnight-fusion",
     githubUrl: "https://github.com/abdulrehman-codecrafter/Vscode-theme.git",
@@ -266,7 +280,7 @@ export const projects: Project[] = [
     title: "Tasks Optimizer",
     description:
       "A productivity web app built with React (Vite) for task management. Includes task prioritization, due dates, reminders, and a responsive interface styled with SCSS and Bootstrap.",
-    image: "/assets/images/todo.svg",
+    image: healthpalImg,
     liveUrl: "https://tasks-optimzer.netlify.app/",
     githubUrl: "https://github.com/abdulrehman-codecrafter/react-todo-.git",
     technologies: [
@@ -286,7 +300,7 @@ export const projects: Project[] = [
     title: "Weather App",
     description:
       "A real-time weather application powered by the OpenWeather API. Features weather alerts, location-based forecasts, and a responsive design for both web and mobile.",
-    image: "/assets/images/weather.svg",
+    image: healthpalImg,
     liveUrl: "https://abdulrahman-weather-app.netlify.app/",
     githubUrl: "https://github.com/abdulrehman-codecrafter/Weather-app.git",
     technologies: [

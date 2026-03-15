@@ -96,9 +96,6 @@ body {
 }
 
 /* Keep route-change scroll jumps instant (no upward animation between pages) */
-html {
-  scroll-behavior: auto;
-}
 
 /* Selection color */
 ::selection {
