@@ -20,7 +20,7 @@ export default function Home() {
         className="animate-fade-in"
         style={{ animationDelay: "240ms" }}
       />
-      <div className="animate-fade-up" style={{ animationDelay: "320ms" }}>
+      <div className="animate" style={{ animationDelay: "320ms" }}>
         <SkillsSection />
       </div>
       <Separator
@@ -37,7 +37,7 @@ export default function Home() {
         className="animate-fade-in"
         style={{ animationDelay: "720ms" }}
       />
-      <div className="animate-fade-up" style={{ animationDelay: "800ms" }}>
+      <div className="animate" style={{ animationDelay: "800ms" }}>
         <ContactSection />
       </div>
     </Container>

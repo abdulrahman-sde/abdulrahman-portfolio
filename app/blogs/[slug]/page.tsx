@@ -34,21 +34,21 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <Container className="py-16">
-      <div className="animate-fade-up mb-2" style={{ animationDelay: "0ms" }}>
+      <div className="animate mb-2" style={{ animationDelay: "0ms" }}>
         <Button href="/blog" variant="link" className="text-xs">
           &larr; All Posts
         </Button>
       </div>
 
       <h1
-        className="animate-fade-up text-3xl font-medium tracking-tight sm:text-4xl"
+        className="animate text-3xl font-medium tracking-tight sm:text-4xl"
         style={{ animationDelay: "80ms" }}
       >
         {post.title}
       </h1>
 
       <div
-        className="animate-fade-up mt-3 flex flex-wrap items-center gap-3 text-sm text-muted-foreground"
+        className="animate mt-3 flex flex-wrap items-center gap-3 text-sm text-muted-foreground"
         style={{ animationDelay: "160ms" }}
       >
         <time dateTime={post.date}>{formatDate(post.date)}</time>
@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </div>
 
       <div
-        className="animate-fade-up mt-4 flex flex-wrap gap-1.5"
+        className="animate mt-4 flex flex-wrap gap-1.5"
         style={{ animationDelay: "240ms" }}
       >
         {post.tags.map((tag) => (
@@ -76,7 +76,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             return (
               <h2
                 key={i}
-                className="animate-fade-up mt-10 mb-4 font-serif text-xl font-medium text-foreground"
+                className="animate mt-10 mb-4 font-serif text-xl font-medium text-foreground"
                 style={{ animationDelay: `${400 + i * 80}ms` }}
               >
                 {block.replace("## ", "")}
@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             return (
               <ol
                 key={i}
-                className="animate-fade-up list-decimal pl-5 space-y-1"
+                className="animate list-decimal pl-5 space-y-1"
                 style={{ animationDelay: `${400 + i * 80}ms` }}
               >
                 {items.map((item, j) => (
@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             return (
               <ul
                 key={i}
-                className="animate-fade-up list-disc pl-5 space-y-1"
+                className="animate list-disc pl-5 space-y-1"
                 style={{ animationDelay: `${400 + i * 80}ms` }}
               >
                 {items.map((item, j) => (
@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           return (
             <p
               key={i}
-              className="animate-fade-up"
+              className="animate"
               style={{ animationDelay: `${400 + i * 80}ms` }}
             >
               {block}

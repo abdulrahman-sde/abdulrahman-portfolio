@@ -1,21 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig, socialLinks } from "@/constants/site";
-
+import avatar from "@/public/avatar.jpg";
 export function HeroSection() {
   return (
     <section className="py-16">
       <div className="flex flex-col max-w-[72ch]">
         {/* ── Avatar and Title/Role ────────────────── */}
         <div
-          className="flex items-center gap-5 animate-fade-up"
+          className="flex items-center gap-5 animate"
           style={{ animationDelay: "0ms" }}
         >
           <div className="relative h-18 w-18 shrink-0 overflow-hidden rounded-full ring-1 ring-border">
             <Image
-              src="/avatar.jpg"
+              src={avatar}
               alt={siteConfig.name}
               fill
+              placeholder="blur"
               className="object-cover"
               priority
             />
@@ -30,20 +31,15 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* ── Bio ──────────────────────────────────── */}
-        <div
-          className="mt-8 animate-fade-up"
-          style={{ animationDelay: "80ms" }}
-        >
+        <div className="mt-8 animate" style={{ animationDelay: "80ms" }}>
           <p className="text-[15px] leading-[1.8] text-muted-foreground sm:text-base">
             I build thoughtful web &amp; app experiences — clean architecture,
             considered design, shipped code. Based in Lahore.
           </p>
         </div>
 
-        {/* ── Links / Socials ──────────────────────── */}
         <div
-          className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 animate-fade-up"
+          className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 animate"
           style={{ animationDelay: "160ms" }}
         >
           <Link

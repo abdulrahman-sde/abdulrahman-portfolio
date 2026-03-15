@@ -8,14 +8,14 @@ export function FeaturedProjectsSection() {
 
   return (
     <section className="py-16">
-      <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
+      <div className="animate" style={{ animationDelay: "0ms" }}>
         <SectionHeader label="Work" title="Featured Projects" />
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         {featured.map((project, i) => (
           <div
             key={project.slug}
-            className="animate-fade-up"
+            className="animate"
             style={{ animationDelay: `${80 + i * 80}ms` }}
           >
             <ProjectCard project={project} />
@@ -23,7 +23,7 @@ export function FeaturedProjectsSection() {
         ))}
       </div>
       <div
-        className="animate-fade-up mt-8 text-center"
+        className="animate mt-8 text-center"
         style={{ animationDelay: "400ms" }}
       >
         <Link

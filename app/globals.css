@@ -123,6 +123,11 @@ button {
     opacity var(--duration-fast) ease;
 }
 
+.projectCardShadow {
+  box-shadow:
+    1px 1px rgba(40, 40, 40, 0.633),
+    -1px -1px rgb(40, 40, 40, 0.633);
+}
 /* ─── Scrollbar styling ──────────────────────────────── */
 ::-webkit-scrollbar {
   width: 6px;

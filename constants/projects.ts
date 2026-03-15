@@ -12,54 +12,6 @@ import unrollaiImg from "@/public/assets/images/unroll-ai-l.png";
 export const projects: Project[] = [
   // ── AI & Full-Stack (High Complexity) ────────────────────────
   {
-    slug: "ai-resume-analyzer",
-    title: "AI Resume Analyzer",
-    description:
-      "An intelligent Resume Analyzer Agent that evaluates candidate resumes and provides structured hiring recommendations with a real-time voice agent. Features resume parsing, scoring logic, explainable decisions, a chatbot for queries, and a live voice agent powered by LiveKit, Deepgram, OpenAI, and ElevenLabs.",
-    image: unrollaiImg,
-    liveUrl: "https://unroll-ai-resume-analyzer.vercel.app/",
-    githubUrl: "https://github.com/bootcampwise/Ai-resume-analyzer.git",
-    technologies: [
-      { name: "LangGraph", icon: "/assets/icons/langgraph.svg" },
-      { name: "FastAPI", icon: "/assets/icons/fastapi.svg" },
-      { name: "Next.js", icon: "/assets/icons/nextjs2.svg" },
-      { name: "LiveKit", icon: "/assets/icons/livekit.svg" },
-      { name: "OpenAI", icon: "/assets/icons/openai.svg" },
-    ],
-    features: [
-      "Agentic AI pipeline for structured resume evaluation",
-      "Real-time voice agent with LiveKit + Deepgram + ElevenLabs",
-      "Chatbot for resume-related queries",
-      "Transparent scoring, strengths, and improvement suggestions",
-      "FastAPI backend with LangGraph multi-agent orchestration",
-    ],
-    featured: true,
-  },
-  {
-    slug: "chat-with-pdfs",
-    title: "Talk with PDFs",
-    description:
-      "An AI document assistant with a custom RAG pipeline built from scratch — no LangChain — using Vercel AI SDK and pgvector. Streams AI responses directly into a chat UI with per-locument conversation state. Inngest background jobs automate PDF parsing and embedding generation.",
-    image: talkwithpdfImg,
-    liveUrl: "https://talkwithpdfs.vercel.app/",
-    githubUrl: "https://github.com/abdulrahman-sde/talk-with-pdfs",
-    technologies: [
-      { name: "Next.js 15", icon: "/assets/icons/nextjs2.svg" },
-      { name: "Postgres", icon: "/assets/icons/postgres.png" },
-      { name: "OpenAI", icon: "/assets/icons/openai.svg" },
-      { name: "Vercel AI SDK", icon: "/assets/icons/ai-sdk.png" },
-      { name: "Inngest", icon: "/assets/icons/inngest.png" },
-    ],
-    features: [
-      "Custom RAG pipeline with pgvector — no LangChain",
-      "Streaming AI responses in real-time chat UI",
-      "Per-locument conversation state management",
-      "Background PDF parsing & embedding generation via Inngest",
-      "Contextual answers using OpenAI + Vercel AI SDK",
-    ],
-    featured: true,
-  },
-  {
     slug: "dealport",
     title: "DealPort",
     description:
@@ -109,6 +61,54 @@ export const projects: Project[] = [
       "Redux Toolkit global state management",
     ],
     isApp: true,
+    featured: true,
+  },
+  {
+    slug: "ai-resume-analyzer",
+    title: "AI Resume Analyzer",
+    description:
+      "An intelligent Resume Analyzer Agent that evaluates candidate resumes and provides structured hiring recommendations with a real-time voice agent. Features resume parsing, scoring logic, explainable decisions, a chatbot for queries, and a live voice agent powered by LiveKit, Deepgram, OpenAI, and ElevenLabs.",
+    image: unrollaiImg,
+    liveUrl: "https://unroll-ai-resume-analyzer.vercel.app/",
+    githubUrl: "https://github.com/bootcampwise/Ai-resume-analyzer.git",
+    technologies: [
+      { name: "LangGraph", icon: "/assets/icons/langgraph.svg" },
+      { name: "FastAPI", icon: "/assets/icons/fastapi.svg" },
+      { name: "Next.js", icon: "/assets/icons/nextjs2.svg" },
+      { name: "LiveKit", icon: "/assets/icons/livekit.svg" },
+      { name: "OpenAI", icon: "/assets/icons/openai.svg" },
+    ],
+    features: [
+      "Agentic AI pipeline for structured resume evaluation",
+      "Real-time voice agent with LiveKit + Deepgram + ElevenLabs",
+      "Chatbot for resume-related queries",
+      "Transparent scoring, strengths, and improvement suggestions",
+      "FastAPI backend with LangGraph multi-agent orchestration",
+    ],
+    featured: true,
+  },
+  {
+    slug: "chat-with-pdfs",
+    title: "Talk with PDFs",
+    description:
+      "An AI document assistant with a custom RAG pipeline built from scratch — no LangChain — using Vercel AI SDK and pgvector. Streams AI responses directly into a chat UI with per-locument conversation state. Inngest background jobs automate PDF parsing and embedding generation.",
+    image: talkwithpdfImg,
+    liveUrl: "https://talkwithpdfs.vercel.app/",
+    githubUrl: "https://github.com/abdulrahman-sde/talk-with-pdfs",
+    technologies: [
+      { name: "Next.js 15", icon: "/assets/icons/nextjs2.svg" },
+      { name: "Postgres", icon: "/assets/icons/postgres.png" },
+      { name: "OpenAI", icon: "/assets/icons/openai.svg" },
+      { name: "Vercel AI SDK", icon: "/assets/icons/ai-sdk.png" },
+      { name: "Inngest", icon: "/assets/icons/inngest.png" },
+    ],
+    features: [
+      "Custom RAG pipeline with pgvector — no LangChain",
+      "Streaming AI responses in real-time chat UI",
+      "Per-locument conversation state management",
+      "Background PDF parsing & embedding generation via Inngest",
+      "Contextual answers using OpenAI + Vercel AI SDK",
+    ],
     featured: true,
   },
 

@@ -16,26 +16,23 @@ export default function ProjectsPage() {
 
   return (
     <Container className="py-16">
-      <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
+      <div className="animate" style={{ animationDelay: "0ms" }}>
         <SectionHeader label="Work" title="Projects" />
       </div>
       <p
-        className="animate-fade-up mb-10 max-w-md text-muted-foreground leading-relaxed"
+        className="animate mb-10 max-w-md text-muted-foreground leading-relaxed"
         style={{ animationDelay: "80ms" }}
       >
         A collection of things I&apos;ve built — AI agents, full-stack apps,
         mobile experiences, and developer tools.
       </p>
 
-      <div
-        className="mb-12 animate-fade-up"
-        style={{ animationDelay: "160ms" }}
-      >
+      <div className="mb-12 animate" style={{ animationDelay: "160ms" }}>
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project, i) => (
             <div
               key={project.slug}
-              className="animate-fade-up"
+              className="animate"
               style={{ animationDelay: `${240 + i * 80}ms` }}
             >
               <ProjectCard project={project} />

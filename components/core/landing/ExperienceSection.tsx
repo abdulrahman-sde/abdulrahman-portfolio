@@ -26,7 +26,7 @@ function CompanyAvatar({ name }: { name: string }) {
 export function ExperienceSection() {
   return (
     <section className="py-16">
-      <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
+      <div className="animate" style={{ animationDelay: "0ms" }}>
         <SectionHeader label="Experience" title="Where I've Worked" />
       </div>
       <div>
@@ -34,7 +34,7 @@ export function ExperienceSection() {
           <div
             key={exp.company}
             className={cn(
-              "animate-fade-up group py-5",
+              "animate group py-5",
               i !== experiences.length - 1 && "border-b border-border",
             )}
             style={{ animationDelay: `${80 + i * 80}ms` }}

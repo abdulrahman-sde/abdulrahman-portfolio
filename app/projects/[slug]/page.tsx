@@ -36,10 +36,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <div className="min-h-screen pb-24 pt-16">
       <Container>
         {/* Back Link */}
-        <div
-          className="animate-fade-up mb-10"
-          style={{ animationDelay: "0ms" }}
-        >
+        <div className="animate mb-10" style={{ animationDelay: "0ms" }}>
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
@@ -65,7 +62,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="">
           {/* Hero Image (Left Side) */}
           {/* <div
-            className="animate-fade-up order-2 lg:order-1 relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-muted/30 shadow-sm"
+            className="animate order-2 lg:order-1 relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-muted/30 shadow-sm"
             style={{ animationDelay: "150ms" }}
           >
             <Image
@@ -79,7 +76,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           {/* Content (Right Side) */}
           <div
-            className="animate-fade-up order-1 lg:order-2"
+            className="animate order-1 lg:order-2"
             style={{ animationDelay: "80ms" }}
           >
             <div className="mb-4 flex items-center gap-3">
@@ -130,7 +127,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         {/* Content Section */}
         <div
-          className="animate-fade-up mt-16 grid grid-cols-1 gap-12 md:mt-24 md:grid-cols-[1fr_250px] lg:gap-24"
+          className="animate mt-16 grid grid-cols-1 gap-12 md:mt-24 md:grid-cols-[1fr_250px] lg:gap-24"
           style={{ animationDelay: "430ms" }}
         >
           {/* Features / Details */}
