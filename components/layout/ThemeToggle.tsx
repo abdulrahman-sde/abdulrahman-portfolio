@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 
 import { motion } from "motion/react";
 import { useTheme } from "next-themes";
+import useSound from "use-sound";
 
 export const ThemeToggle = () => {
   const [mounted, setMounted] = useState(false);
+  const [play] = useSound("/assets/audios/switch.ogg", { volume: 0.02 });
   const { resolvedTheme, setTheme } = useTheme();
   const isDark = resolvedTheme === "dark";
   useEffect(() => {
@@ -18,7 +20,10 @@ export const ThemeToggle = () => {
   }
   return (
     <button
-      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      onClick={() => {
+        play();
+        setTheme(resolvedTheme === "dark" ? "light" : "dark");
+      }}
       className="px-2 pt-2 rounded-xl transition"
     >
       {isDark ? (

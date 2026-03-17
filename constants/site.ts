@@ -10,7 +10,7 @@ export const siteConfig = {
 
 export const navItems: NavItem[] = [
   { label: "Projects", href: "/projects" },
-  { label: "Blogs", href: "/blogs" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export const socialLinks: SocialLink[] = [

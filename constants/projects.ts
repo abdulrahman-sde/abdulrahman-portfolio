@@ -45,7 +45,7 @@ export const projects: Project[] = [
     image: healthpalImg,
 
     githubUrl:
-      "https://github.com/bootcampwise/Healthpal--loctor-Appointment-App.git",
+      "https://github.com/bootcampwise/Healthpal--doctor-Appointment-App.git",
     technologies: [
       { name: "React Native", icon: "/assets/icons/expo.svg" },
       { name: "Supabase", icon: "/assets/icons/supabase.svg" },
