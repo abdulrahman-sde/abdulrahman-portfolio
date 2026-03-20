@@ -27,9 +27,9 @@ const RaisedButton = React.forwardRef<HTMLButtonElement, RaisedButtonProps>(
           ...style,
         }}
         className={cn(
-          "relative inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-medium transition-all",
+          "relative inline-flex appearance-none items-center justify-center rounded-xl border-0 px-4 py-2 text-sm font-medium transition-[transform,opacity]",
           "active:scale-95 hover:opacity-90",
-          "before:absolute before:inset-0 before:rounded-inherit before:border-t before:border-white/40",
+          "before:absolute before:inset-0 before:rounded-inherit",
           "before:bg-linear-to-b before:from-white/20 before:to-transparent",
           "overflow-hidden cursor-pointer",
           className,

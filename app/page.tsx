@@ -6,6 +6,7 @@ import { SkillsSection } from "@/components/core/landing/SkillsSection";
 import { ExperienceSection } from "@/components/core/landing/ExperienceSection";
 import { FeaturedProjectsSection } from "@/components/core/landing/FeaturedProjectsSection";
 import { ContactSection } from "@/components/core/landing/ContactSection";
+import GithubCalender from "@/components/core/landing/GithubCalender";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         style={{ animationDelay: "80ms" }}
       />
       <AboutSection />
+      <GithubCalender />
       <Separator
         className="animate-fade-in"
         style={{ animationDelay: "240ms" }}

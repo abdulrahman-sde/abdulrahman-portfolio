@@ -6,7 +6,7 @@ import { siteConfig } from "@/constants/site";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-[url(/noise.png)] bg-background bg-size-[auto_50px]  backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border bg-[url(/noise.png)] bg-background bg-size-[auto_80px]  backdrop-blur-md">
       <Container className="flex h-14 items-center justify-between">
         <Link
           href="/"

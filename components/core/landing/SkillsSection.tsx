@@ -1,6 +1,7 @@
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { Badge } from "@/components/ui/Badge";
 import { skillCategories } from "@/constants/skills";
+import { getTechSvgIcon } from "@/constants/tech-icons";
 
 export function SkillsSection() {
   return (
@@ -14,7 +15,13 @@ export function SkillsSection() {
             </p>
             <div className="flex flex-wrap gap-2">
               {items.map((skill) => (
-                <Badge key={skill}>{skill}</Badge>
+                <Badge
+                  key={skill}
+                  techIcon={getTechSvgIcon(skill)}
+                  techIconAlt={skill}
+                >
+                  {skill}
+                </Badge>
               ))}
             </div>
           </div>

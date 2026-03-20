@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig, socialLinks } from "@/constants/site";
 import avatar from "@/public/avatar.jpg";
+import { FlipWords } from "@/components/ui/FlipWords";
+const words = ["Software Engineer", "Iterator"];
+
 export function HeroSection() {
   return (
     <section className="py-16">
@@ -22,12 +25,15 @@ export function HeroSection() {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <h1 className="font-serif text-[28px] tracking-tight text-foreground sm:text-[32px]">
+            <h1 className=" text-[28px] tracking-tight text-foreground sm:text-[32px]">
               {siteConfig.name}
             </h1>
-            <p className="mt-1 text-[15px] font-medium text-muted-foreground">
-              Full-Stack Engineer
-            </p>
+            {/* Full-Stack Engineer */}
+            <FlipWords
+              words={words}
+              duration={1000}
+              className="mt-0.5 -ms-2 text-[15.5px] font-medium text-muted-foreground"
+            />
           </div>
         </div>
 
