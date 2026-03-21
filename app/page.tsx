@@ -13,33 +13,33 @@ export default function Home() {
     <Container>
       <HeroSection />
       <Separator
-        className="animate-fade-in"
+        className="animate-fade-in -fade-in"
         style={{ animationDelay: "80ms" }}
       />
       <AboutSection />
       <GithubCalender />
       <Separator
-        className="animate-fade-in"
+        className="animate-fade-in -fade-in"
         style={{ animationDelay: "240ms" }}
       />
-      <div className="animate" style={{ animationDelay: "320ms" }}>
+      <div className="animate-fade-in " style={{ animationDelay: "320ms" }}>
         <SkillsSection />
       </div>
       <Separator
-        className="animate-fade-in"
+        className="animate-fade-in -fade-in"
         style={{ animationDelay: "400ms" }}
       />
       <ExperienceSection />
       <Separator
-        className="animate-fade-in"
+        className="animate-fade-in -fade-in"
         style={{ animationDelay: "560ms" }}
       />
       <FeaturedProjectsSection />
       <Separator
-        className="animate-fade-in"
+        className="animate-fade-in -fade-in"
         style={{ animationDelay: "720ms" }}
       />
-      <div className="animate" style={{ animationDelay: "800ms" }}>
+      <div className="animate-fade-in " style={{ animationDelay: "800ms" }}>
         <ContactSection />
       </div>
     </Container>

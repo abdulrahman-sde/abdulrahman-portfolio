@@ -35,7 +35,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <div className="min-h-screen pb-24 pt-16">
       <Container>
         {/* Back Link */}
-        <div className="animate mb-10" style={{ animationDelay: "0ms" }}>
+        <div
+          className="animate-fade-in  mb-10"
+          style={{ animationDelay: "0ms" }}
+        >
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
@@ -60,7 +63,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         {/* Header Section */}
         <div className="">
           <div
-            className="animate order-1 lg:order-2"
+            className="animate-fade-in  order-1 lg:order-2"
             style={{ animationDelay: "80ms" }}
           >
             <div className="mb-4 flex items-center gap-3">
@@ -113,7 +116,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         {/* Content Section */}
         <div
-          className="animate mt-16 grid grid-cols-1 gap-12 md:mt-24 md:grid-cols-[1fr_250px] lg:gap-24"
+          className="animate-fade-in  mt-16 grid grid-cols-1 gap-12 md:mt-24 md:grid-cols-[1fr_250px] lg:gap-24"
           style={{ animationDelay: "430ms" }}
         >
           {/* Features / Details */}
@@ -124,7 +127,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div className="mt-8 space-y-4">
               {project.features.map((feature, i) => (
                 <div key={i} className="flex gap-4">
-                  <div className="mt-1 flex h-5.5 w-5.5 shrink-0 items-center justify-center rounded-md border border-border bg-muted dark:bg-[#28272746]">
+                  <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-border bg-muted dark:bg-[#28272746]">
                     <svg
                       width="10"
                       height="10"

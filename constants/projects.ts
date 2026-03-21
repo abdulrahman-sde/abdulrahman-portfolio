@@ -8,9 +8,10 @@ import meditrackImg from "@/public/assets/images/meditrack-l.png";
 import storeitImg from "@/public/assets/images/store-it-l.png";
 import talkwithpdfImg from "@/public/assets/images/talkwithpdf-l.png";
 import unrollaiImg from "@/public/assets/images/unroll-ai-l.png";
-
+import astraBotImg from "@/public/assets/images/astrabot-l.png";
+import weatherImg from "@/public/assets/images/weather-l.png";
+import midnightFusionImg from "@/public/assets/images/midnightFusion.jpeg";
 export const projects: Project[] = [
-  // ── AI & Full-Stack (High Complexity) ────────────────────────
   {
     slug: "dealport",
     title: "DealPort",
@@ -164,7 +165,7 @@ export const projects: Project[] = [
     title: "AstraBot",
     description:
       "An advanced AI-powered chatbot built with Next.js 15 that delivers intelligent, context-aware responses. Maintains full conversation context, stores chat history in MongoDB, and uses Clerk for secure authentication.",
-    image: healthpalImg,
+    image: astraBotImg,
     githubUrlFrontend: "https://astra-chatbot-peach.vercel.app/",
     githubUrl: "https://github.com/abdulrehman-codecrafter/astra-chatbot.git",
     technologies: [
@@ -259,7 +260,7 @@ export const projects: Project[] = [
     title: "Midnight Fusion",
     description:
       "A meticulously designed VS Code theme combining deep dark tones with vibrant highlights. Optimized for readability and reduced eye strain with custom syntax highlighting for popular languages.",
-    image: healthpalImg,
+    image: midnightFusionImg,
     liveUrl:
       "https://marketplace.visualstudio.com/items?itemName=Abdulrahmansde.midnight-fusion",
     githubUrl: "https://github.com/abdulrehman-codecrafter/Vscode-theme.git",
@@ -275,32 +276,13 @@ export const projects: Project[] = [
       "Consistent styling across UI components",
     ],
   },
-  {
-    slug: "tasks-optimizer",
-    title: "Tasks Optimizer",
-    description:
-      "A productivity web app built with React (Vite) for task management. Includes task prioritization, due dates, reminders, and a responsive interface styled with SCSS and Bootstrap.",
-    image: healthpalImg,
-    liveUrl: "https://tasks-optimzer.netlify.app/",
-    githubUrl: "https://github.com/abdulrehman-codecrafter/react-todo-.git",
-    technologies: [
-      { name: "React (Vite)", icon: "/assets/icons/vitejs.svg" },
-      { name: "SCSS", icon: "/assets/icons/sass.svg" },
-      { name: "Bootstrap", icon: "/assets/icons/bootstrap4.svg" },
-      { name: "JavaScript", icon: "/assets/icons/js.svg" },
-    ],
-    features: [
-      "Create, update, and delete tasks",
-      "Task prioritization and due dates",
-      "Responsive design for mobile and desktop",
-    ],
-  },
+
   {
     slug: "weather-app",
     title: "Weather App",
     description:
       "A real-time weather application powered by the OpenWeather API. Features weather alerts, location-based forecasts, and a responsive design for both web and mobile.",
-    image: healthpalImg,
+    image: weatherImg,
     liveUrl: "https://abdulrahman-weather-app.netlify.app/",
     githubUrl: "https://github.com/abdulrehman-codecrafter/Weather-app.git",
     technologies: [

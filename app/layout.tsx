@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Plus_Jakarta_Sans,
-  Instrument_Serif,
-  JetBrains_Mono,
-} from "next/font/google";
+import { Plus_Jakarta_Sans, Funnel_Display } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
@@ -12,19 +8,6 @@ import "./globals.css";
 
 const sans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const serif = Instrument_Serif({
-  variable: "--font-instrument-serif",
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
-
-const mono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -44,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${sans.variable} ${serif.variable} ${mono.variable} font-sans antialiased`}
-      >
+      <body className={`${sans.variable}  font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

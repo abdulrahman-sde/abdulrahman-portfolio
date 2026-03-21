@@ -14,7 +14,7 @@ app/
   contact/page.tsx
 components/
   ui/          # primitives: Button, Badge, Input
-  shared/      # composed reusables: SectionHeader, AnimatedText
+  shared/      # composed reusables: SectionHeader, animate-fade-in dText
   layout/      # Navbar, Footer, MobileMenu
   core/
     landing/

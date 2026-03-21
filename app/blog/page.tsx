@@ -18,7 +18,10 @@ export default function BlogPage() {
   return (
     <Container className="py-16">
       {isComingSoonFromContentful ? (
-        <div className="animate py-2" style={{ animationDelay: "160ms" }}>
+        <div
+          className="animate-fade-in  py-2"
+          style={{ animationDelay: "160ms" }}
+        >
           <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Coming Soon
           </span>
@@ -33,11 +36,11 @@ export default function BlogPage() {
         </div>
       ) : (
         <div>
-          <div className="animate" style={{ animationDelay: "0ms" }}>
+          <div className="animate-fade-in " style={{ animationDelay: "0ms" }}>
             <SectionHeader label="Writing" title="Blog" />
           </div>
           <p
-            className="animate mb-10 max-w-md text-muted-foreground leading-relaxed"
+            className="animate-fade-in  mb-10 max-w-md text-muted-foreground leading-relaxed"
             style={{ animationDelay: "80ms" }}
           >
             Thoughts on code, design, and the craft of building software.
@@ -45,7 +48,7 @@ export default function BlogPage() {
           {sorted.map((post, i) => (
             <div
               key={post.slug}
-              className="animate"
+              className="animate-fade-in "
               style={{ animationDelay: `${160 + i * 80}ms` }}
             >
               <BlogCard post={post} />

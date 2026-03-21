@@ -5,19 +5,22 @@ export function AboutSection() {
 
   return (
     <section className="py-8">
-      <div className="animate" style={{ animationDelay: `${baseDelay}ms` }}>
+      <div
+        className="animate-fade-in "
+        style={{ animationDelay: `${baseDelay}ms` }}
+      >
         <SectionHeader label="About" title="A Bit About Me" />
       </div>
       <div className="max-w-[72ch] space-y-2 text-sm leading-[1.8] text-muted-foreground">
         <p
-          className="animate"
+          className="animate-fade-in "
           style={{ animationDelay: `${baseDelay + 80}ms` }}
         >
           I&apos;m a Computer Science student at GCU Faisalabad with a strong
           interest in full-stack engineering and AI.
         </p>
         <p
-          className="animate"
+          className="animate-fade-in "
           style={{ animationDelay: `${baseDelay + 160}ms` }}
         >
           Through Techloset&apos;s Full-Stack & Agentic AI Bootcamp and a
@@ -27,7 +30,7 @@ export function AboutSection() {
           development with LangChain, LangGraph, and RAG pipelines.
         </p>
         <p
-          className="animate"
+          className="animate-fade-in "
           style={{ animationDelay: `${baseDelay + 240}ms` }}
         >
           I care about the full picture: clean architecture, smooth UX, reliable
@@ -35,7 +38,7 @@ export function AboutSection() {
         </p>
 
         <p
-          className="animate"
+          className="animate-fade-in "
           style={{ animationDelay: `${baseDelay + 320}ms` }}
         >
           If you&apos;re building something worth building or just want to talk

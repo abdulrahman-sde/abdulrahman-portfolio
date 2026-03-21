@@ -77,8 +77,8 @@
   --color-accent-foreground: var(--accent-foreground);
 
   --font-sans: var(--font-plus-jakarta-sans);
-  --font-serif: var(--font-instrument-serif);
-  --font-mono: var(--font-jetbrains-mono);
+  /* --font-funnel_sans: var(--font-funnel-sans);
+  --font-mono: var(--font-jetbrains-mono); */
 }
 
 *,
@@ -108,18 +108,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-mono), ui-serif, Georgia, serif;
+  font-family: var(--font-sans), ui-serif, Georgia, serif;
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
-
-/* a,
-button {
-  transition:
-    color var(--duration-fast) ease,
-    background-color var(--duration-fast) ease,
-    opacity var(--duration-fast) ease;
-} */
 
 html {
   scrollbar-width: thin;
@@ -176,18 +168,18 @@ html {
   }
 }
 
-.animate-fade-up {
+/* .animate-fade-in {
   animation: fade-up 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
+} */
 
-.animate-fade-in {
+/* .animate-fade-up {
   animation: fade-in 0.45s ease both;
-}
+} */
 
 /* ─── Reduced motion ─────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-  .animate-fade-up,
-  .animate-fade-in {
+  .animate-fade-in -fade-up,
+  .animate-fade-in -fade-in {
     animation: none;
     opacity: 1;
     transform: none;
