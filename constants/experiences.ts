@@ -4,16 +4,25 @@ export const experiences: Experience[] = [
   {
     company: "Techloset",
     role: "Full-Stack & Agentic AI Bootcamp",
-    period: "Nov 2025 — Present",
+    period: "Jul 2025 — Nov 2025",
     description:
-      "Delivered 3 production-grade projects across Next.js, MERN, and React Native tracks. Integrated GPT-4o into a live admin dashboard for prompt-to-interface workflows. Currently designing multi-agent pipelines with LangChain and LangGraph.",
-    current: true,
+      "Completed Techloset’s 4-month Full-Stack & Agentic AI Bootcamp.",
+    highlights: [
+      "Delivered production-ready projects across web, mobile, and AI-focused tracks during the bootcamp.",
+      "Built stronger full-stack execution across Next.js, MERN, React Native, and FastAPI by shipping complete product workflows end to end.",
+      "Developed practical engineering judgment in architecture decisions, API integration, state management, and production deployment.",
+    ],
   },
   {
     company: "Aivex",
     role: "Next.js Intern",
     period: "Apr 2025 — Jun 2025",
     description:
-      "Developed and maintained scalable frontend features using Next.js for a production application. Integrated REST APIs, implemented CRUD operations, and resolved performance bottlenecks improving page responsiveness across key user flows.",
+      "Worked on a live Next.js product during my internship at Aivex.",
+    highlights: [
+      "Implemented and maintained user-facing features in a production Next.js codebase.",
+      "Integrated REST APIs and shipped stable CRUD flows used in core product screens.",
+      "Fixed UI bottlenecks and improved responsiveness across key user journeys.",
+    ],
   },
 ];

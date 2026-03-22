@@ -23,18 +23,18 @@ export function AboutSection() {
           className="animate-fade-in "
           style={{ animationDelay: `${baseDelay + 160}ms` }}
         >
-          Through Techloset&apos;s Full-Stack & Agentic AI Bootcamp and a
-          hands-on internship at Aivex, I&apos;ve gone from learning the basics
-          to shipping real products. I build end-to-end applications with
-          Next.js, Node.js, and TypeScript, and work at the frontier of AI
-          development with LangChain, LangGraph, and RAG pipelines.
+          Before bootcamp, I worked on a live product internship at Aivex,
+          building production Next.js features and API-driven workflows. I then
+          completed Techloset&apos;s 4-month Full-Stack & Agentic AI Bootcamp,
+          focused on full-stack and AI product development with modern
+          frameworks and production workflows.
         </p>
         <p
           className="animate-fade-in "
           style={{ animationDelay: `${baseDelay + 240}ms` }}
         >
-          I care about the full picture: clean architecture, smooth UX, reliable
-          backends, and AI that feels genuinely useful rather than bolted on.
+          I care about the full picture: clean architecture, strong UX, reliable
+          backend flows, and AI that solves real product problems.
         </p>
 
         <p

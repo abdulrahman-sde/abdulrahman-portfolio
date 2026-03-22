@@ -47,20 +47,23 @@ export function ExperienceSection() {
                     <h3 className="truncate font-medium text-foreground">
                       {exp.role}
                     </h3>
-                    {exp.current && (
-                      <span className="inline-flex shrink-0 items-center rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-medium text-accent">
-                        Current
-                      </span>
-                    )}
                   </div>
                   <p className="shrink-0 text-sm tabular-nums text-muted-foreground">
                     {exp.period}
                   </p>
                 </div>
                 <p className="text-sm text-muted-foreground">{exp.company}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {exp.description}
-                </p>
+                {exp.highlights?.length ? (
+                  <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-relaxed text-muted-foreground">
+                    {exp.highlights.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {exp.description}
+                  </p>
+                )}
               </div>
             </div>
           </div>

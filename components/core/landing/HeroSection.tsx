@@ -39,8 +39,9 @@ export function HeroSection() {
 
         <div className="mt-8 animate" style={{ animationDelay: "80ms" }}>
           <p className="text-[15px] leading-[1.8] text-muted-foreground sm:text-base">
-            I build thoughtful web &amp; app experiences — clean architecture,
-            considered design, shipped code. Based in Lahore.
+            I build end-to-end web and mobile products with clean architecture,
+            practical AI integrations, and production-ready execution. Based in
+            Lahore.
           </p>
         </div>
 
