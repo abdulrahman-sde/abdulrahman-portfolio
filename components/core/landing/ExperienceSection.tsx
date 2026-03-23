@@ -1,12 +1,29 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { experiences } from "@/constants/experiences";
 
-/**
- * PLACEHOLDER: Company logo — swap CompanyAvatar with next/image once you
- * have logo assets. e.g: <Image src={`/logos/${slug}.svg`} alt={name} .../>
- */
-function CompanyAvatar({ name }: { name: string }) {
+function CompanyAvatar({
+  name,
+  image,
+}: {
+  name: string;
+  image?: (typeof experiences)[number]["companyImage"];
+}) {
+  if (image) {
+    return (
+      <div className="relative h-10 w-10 shrink-0 dark:bg-[#1b1b1b] bg-[#b8b7b730] overflow-hidden rounded-lg border border-border/80  p-1.5 -mt-0.5">
+        <Image
+          src={image}
+          alt={`${name} logo`}
+          placeholder="blur"
+          className="object-contain"
+          sizes="36px"
+        />
+      </div>
+    );
+  }
+
   const initials = name
     .split(" ")
     .map((w) => w[0])
@@ -16,7 +33,7 @@ function CompanyAvatar({ name }: { name: string }) {
   return (
     <div
       aria-hidden="true"
-      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border bg-muted text-[10px] font-semibold tracking-wide text-muted-foreground"
+      className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border/80 bg-linear-to-br from-muted/90 to-background text-[10px] font-semibold tracking-wide text-muted-foreground"
     >
       {initials}
     </div>
@@ -40,7 +57,7 @@ export function ExperienceSection() {
             style={{ animationDelay: `${80 + i * 80}ms` }}
           >
             <div className="flex items-start gap-3">
-              <CompanyAvatar name={exp.company} />
+              <CompanyAvatar name={exp.company} image={exp.companyImage} />
               <div className="min-w-0 flex-1">
                 <div className="flex flex-col justify-between gap-0.5 sm:flex-row sm:items-baseline">
                   <div className="flex min-w-0 flex-wrap items-center gap-2">

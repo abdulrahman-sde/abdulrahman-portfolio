@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512" role="img" aria-labelledby="t3-title">
+  <title id="t3-title">Typography Concept 3 - Full Width Signature</title>
+  <g id="wordmark">
+    <rect x="64" y="118" width="896" height="276" rx="32" fill="#26221f"/>
+    <text x="110" y="288" fill="#f2efea" font-size="148" font-weight="700" letter-spacing="-6" font-family="Trebuchet MS, Arial, Helvetica, sans-serif">ABDUL</text>
+    <text x="544" y="288" fill="#8c857d" font-size="148" font-weight="700" letter-spacing="-5" font-family="Trebuchet MS, Arial, Helvetica, sans-serif">RAHMAN</text>
+    <line x1="110" y1="316" x2="912" y2="316" stroke="#8c857d" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g id="tagline">
+    <text x="512" y="438" text-anchor="middle" fill="#8c857d" font-size="34" letter-spacing="10" font-weight="600" font-family="Trebuchet MS, Arial, Helvetica, sans-serif">SOFTWARE ENGINEER</text>
+  </g>
+</svg>

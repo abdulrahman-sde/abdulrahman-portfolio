@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Funnel_Display } from "next/font/google";
+import { Manrope, Hanken_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { siteConfig } from "@/constants/site";
 import "./globals.css";
 
-const sans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
+const bodyFont = Hanken_Grotesk({
+  variable: "--font-hanken-grotesk",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const headingFont = Manrope({
+  variable: "--font-space-grotesk",
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -27,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${sans.variable}  font-sans antialiased`}>
+      <body
+        className={`${bodyFont.variable} ${headingFont.variable} font-sans antialiased`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

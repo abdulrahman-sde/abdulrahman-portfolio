@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="c2-title">
+  <title id="c2-title">AR Concept 2 - Circular Badge</title>
+  <g id="icon">
+    <rect x="40" y="40" width="432" height="432" rx="216" fill="#ddd9d5"/>
+    <path fill="#2a2725" d="M126 368L212 146H274L274 368H236V212L170 368Z"/>
+    <rect x="168" y="278" width="76" height="18" rx="9" fill="#9a948d"/>
+    <rect x="278" y="146" width="38" height="222" rx="9" fill="#2a2725"/>
+    <path fill="#2a2725" d="M316 146H342C390 146 422 174 422 218C422 262 390 291 342 294H316Z"/>
+    <path fill="#ddd9d5" d="M343 178H345C368 178 383 193 383 215C383 239 367 258 342 258H343Z"/>
+    <path fill="#9a948d" d="M342 292L422 368H372L316 313V292Z"/>
+  </g>
+</svg>

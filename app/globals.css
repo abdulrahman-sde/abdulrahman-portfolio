@@ -45,6 +45,8 @@
   --scrollbar-track: var(--muted);
   --scrollbar-thumb: color-mix(in srgb, var(--accent) 72%, var(--background));
   --scrollbar-thumb-hover: var(--accent);
+
+  --text-sm: 0.92rem;
 }
 
 .dark {
@@ -75,10 +77,11 @@
   --color-ring: var(--ring);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-
-  --font-sans: var(--font-plus-jakarta-sans);
-  /* --font-funnel_sans: var(--font-funnel-sans);
-  --font-mono: var(--font-jetbrains-mono); */
+  --font-sans: var(--font-hanken-grotesk);
+  --font-serif: var(--font-space-grotesk);
+  --font-grotesk: var(--font-space-grotesk);
+  --text-sm: var(--text-sm);
+  /* --font-mono: var(--font-jetbrains-mono); */
 }
 
 *,
@@ -94,7 +97,7 @@ body {
   background-size: 130px 130px;
   background-position: 0 0;
   color: var(--foreground);
-  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-hanken-grotesk), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -108,7 +111,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-sans), ui-serif, Georgia, serif;
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -0.02em;
   line-height: 1.15;
 }

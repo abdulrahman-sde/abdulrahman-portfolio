@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="s2-title">
+  <title id="s2-title">Symbol 2 - Compass Fold</title>
+  <g id="icon">
+    <rect x="40" y="40" width="432" height="432" rx="96" fill="#ddd9d5"/>
+    <path d="M256 110L338 244L256 402L174 244Z" fill="#2a2725"/>
+    <path d="M256 110L338 244L256 244Z" fill="#9a948d"/>
+    <path d="M256 402L174 244L256 244Z" fill="#9a948d"/>
+    <circle cx="256" cy="244" r="30" fill="#ddd9d5"/>
+  </g>
+</svg>

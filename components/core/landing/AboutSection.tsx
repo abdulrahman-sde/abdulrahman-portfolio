@@ -23,11 +23,10 @@ export function AboutSection() {
           className="animate-fade-in "
           style={{ animationDelay: `${baseDelay + 160}ms` }}
         >
-          Before bootcamp, I worked on a live product internship at Aivex,
-          building production Next.js features and API-driven workflows. I then
-          completed Techloset&apos;s 4-month Full-Stack & Agentic AI Bootcamp,
-          focused on full-stack and AI product development with modern
-          frameworks and production workflows.
+          I worked as a remote internee at Aivex, building production Next.js
+          features and API-driven workflows. I then completed Techloset&apos;s
+          4-month Full-Stack & Agentic AI Bootcamp, focused on full-stack and AI
+          product development with modern frameworks and production workflows.
         </p>
         <p
           className="animate-fade-in "

@@ -9,7 +9,6 @@ export function HeroSection() {
   return (
     <section className="py-16">
       <div className="flex flex-col max-w-[72ch]">
-        {/* ── Avatar and Title/Role ────────────────── */}
         <div
           className="flex items-center gap-5 animate"
           style={{ animationDelay: "0ms" }}
@@ -25,10 +24,9 @@ export function HeroSection() {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <h1 className=" text-[28px] font-funnel_sans tracking-tight text-foreground sm:text-[32px]">
+            <h1 className=" text-[25px] font-bold tracking-tighter text-foreground sm:text-[28px]">
               {siteConfig.name}
             </h1>
-            {/* Full-Stack Engineer */}
             <FlipWords
               words={words}
               duration={1000}

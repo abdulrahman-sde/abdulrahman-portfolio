@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="c1-title">
+  <title id="c1-title">AR Concept 1 - Monogram Block</title>
+  <g id="icon">
+    <rect x="36" y="36" width="440" height="440" rx="96" fill="#26221f"/>
+    <path fill="#f2efea" d="M116 398L196 120H256V398H218V204L154 398Z"/>
+    <rect x="156" y="286" width="80" height="20" rx="10" fill="#8c857d"/>
+    <rect x="256" y="120" width="42" height="278" rx="10" fill="#f2efea"/>
+    <path fill="#f2efea" d="M298 120H328C392 120 424 153 424 202C424 255 386 286 316 292H298Z"/>
+    <path fill="#26221f" d="M332 164H336C372 164 388 181 388 202C388 224 369 243 334 246H332Z"/>
+    <path fill="#8c857d" d="M328 294L416 398H374L298 308V294Z"/>
+  </g>
+</svg>

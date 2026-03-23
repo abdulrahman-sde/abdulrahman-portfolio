@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 512" role="img" aria-labelledby="t4-title">
+  <title id="t4-title">Typography Concept 4 - Monoline Modern</title>
+  <g id="icon">
+    <rect x="70" y="92" width="260" height="328" rx="56" fill="#f2efea" stroke="#8c857d" stroke-width="10"/>
+    <text x="200" y="300" text-anchor="middle" fill="#2a2623" font-size="170" font-weight="600" letter-spacing="-14" font-family="Avenir Next, Arial, Helvetica, sans-serif">AR</text>
+  </g>
+  <g id="wordmark">
+    <text x="380" y="246" fill="#2a2623" font-size="98" font-weight="600" letter-spacing="4" font-family="Avenir Next, Arial, Helvetica, sans-serif">ABDUL RAHMAN</text>
+    <line x1="382" y1="278" x2="938" y2="278" stroke="#8c857d" stroke-width="6" stroke-linecap="round"/>
+    <text x="382" y="338" fill="#8c857d" font-size="40" font-weight="600" letter-spacing="12" font-family="Avenir Next, Arial, Helvetica, sans-serif">PORTFOLIO</text>
+  </g>
+</svg>

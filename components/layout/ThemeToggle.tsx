@@ -15,7 +15,7 @@ export const ThemeToggle = () => {
   }, []);
 
   if (!mounted) {
-    return;
+    return <div className="px-6"></div>;
   }
   return (
     <button

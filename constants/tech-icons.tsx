@@ -225,5 +225,30 @@ export function getTechSvgIcon(name: string): string | ReactNode {
     );
   }
 
+  if (key.includes("docker")) {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        className={iconClassName}
+        aria-hidden="true"
+      >
+        <path
+          d="M14 9h2v2h-2V9zm4 0h2v2h-2V9zm0 4h2v2h-2v-2zm-4 0h2v2h-2v-2z"
+          fill="currentColor"
+        />
+        <path d="M6 9h2v2H6V9z" fill="currentColor" />
+        <path d="M3.5 9.5c-.3.3-.5.7-.5 1.2v6c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3v-6c0-.5-.2-.9-.5-1.2" />
+        <path
+          d="M5 9V7c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
   return genericIcon;
 }

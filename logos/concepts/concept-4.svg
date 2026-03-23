@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="c4-title">
+  <title id="c4-title">AR Concept 4 - Connected A R</title>
+  <g id="icon">
+    <rect x="44" y="44" width="424" height="424" rx="96" fill="#26221f"/>
+    <path fill="#f2efea" d="M118 380L206 134H276V380H238V214L166 380Z"/>
+    <rect x="165" y="276" width="83" height="18" rx="9" fill="#8c857d"/>
+    <path fill="#f2efea" d="M276 134H316V232C332 225 351 222 372 222C405 222 434 248 434 290C434 344 398 380 338 380H276Z"/>
+    <path fill="#26221f" d="M316 254H336C365 254 392 268 392 292C392 315 377 344 336 344H316Z"/>
+    <path fill="#8c857d" d="M338 319L430 380H376L302 331Z"/>
+  </g>
+</svg>

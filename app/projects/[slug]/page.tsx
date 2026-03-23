@@ -87,7 +87,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <RaisedButton className="h-auto rounded-lg px-3.5 py-1 text-[11px] font-medium leading-6">
+                  <RaisedButton className="h-auto rounded-lg px-3.5 py-1 text-[13px] font-medium leading-6">
                     View Live Demo
                   </RaisedButton>
                 </a>
@@ -97,7 +97,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-border bg-transparent px-3.5 py-1 text-[11px] font-medium leading-6 text-foreground transition-all duration-150 hover:bg-muted active:scale-[0.97]"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-border bg-transparent px-3.5 py-1 text-[13px] font-medium leading-6 text-foreground transition-all duration-150 hover:bg-muted active:scale-[0.97]"
                 >
                   <svg
                     width="14"

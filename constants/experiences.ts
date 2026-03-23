@@ -1,8 +1,11 @@
 import type { Experience } from "@/types/experience";
+import techlosetLogo from "@/public/assets/images/techloset-logo.png";
+import aivexLogo from "@/public/assets/images/aivex-logo.png";
 
 export const experiences: Experience[] = [
   {
     company: "Techloset",
+    companyImage: techlosetLogo,
     role: "Full-Stack & Agentic AI Bootcamp",
     period: "Jul 2025 — Nov 2025",
     description:
@@ -15,6 +18,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Aivex",
+    companyImage: aivexLogo,
     role: "Next.js Intern",
     period: "Apr 2025 — Jun 2025",
     description:
