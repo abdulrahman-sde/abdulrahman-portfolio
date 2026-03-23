@@ -76,7 +76,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               {project.title}
             </h1>
 
-            <p className="mt-5 text-xs md:text-sm leading-7 text-muted-foreground">
+            <p className="mt-5 text-sm leading-7 text-muted-foreground">
               {project.description}
             </p>
 
