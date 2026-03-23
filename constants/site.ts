@@ -2,7 +2,7 @@ import type { NavItem, SocialLink } from "@/types/social";
 
 export const siteConfig = {
   name: "Abdul Rahman",
-  title: "Abdul Rahman — Full-Stack & AI Developer",
+  title: "Abdul Rahman - Full-Stack & AI Developer",
   description:
     "Full-stack developer and AI enthusiast building intelligent web experiences with Next.js, React Native, and Agentic AI. Based in Faisalabad, Pakistan.",
   url: "https://www.abdulrahmanasif.dev",

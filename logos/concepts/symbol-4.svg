@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="s4-title">
-  <title id="s4-title">Symbol 4 - Ascend Path</title>
-  <g id="icon">
-    <rect x="36" y="36" width="440" height="440" rx="110" fill="#26221f"/>
-    <path d="M132 332C132 260 182 196 252 184C318 173 380 210 404 274" fill="none" stroke="#8c857d" stroke-width="34" stroke-linecap="round"/>
-    <path d="M152 354C196 402 267 420 330 398C374 383 408 350 424 306" fill="none" stroke="#f2efea" stroke-width="34" stroke-linecap="round"/>
-    <path d="M394 236L418 298L354 300Z" fill="#f2efea"/>
-  </g>
-</svg>
