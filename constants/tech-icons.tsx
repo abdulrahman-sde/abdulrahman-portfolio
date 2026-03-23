@@ -32,6 +32,7 @@ const iconPathByKey: Record<string, string> = {
   python: "/assets/icons/skills/python.png",
   github: "/assets/icons/skills/github.png",
   git: "/assets/icons/skills/git.png",
+  docker: "/assets/icons/skills/docker.svg",
 };
 
 const genericIcon = (
