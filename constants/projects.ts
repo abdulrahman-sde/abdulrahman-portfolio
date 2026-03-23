@@ -21,7 +21,7 @@ export const projects: Project[] = [
     image: dealportImg,
     liveUrl: "https://dealport-frontened-powy.vercel.app/",
     githubUrl:
-      "https://github.com/bootcampwise/Dealport---Ecommerce-Admin-lashboard-.git",
+      "https://github.com/abdulrahman-sde/Dealport-Ecommerce-Admin-Dashboard-.git",
     technologies: [
       { name: "React", icon: "/assets/icons/react.svg" },
       { name: "TypeScript", icon: "/assets/icons/typescript.svg" },
@@ -46,8 +46,7 @@ export const projects: Project[] = [
       "A cross-platform React Native mobile app for doctor appointments with distinct doctor/patient role flows: booking, acceptance, rescheduling, and cancellation. Features Supabase for serverless auth & database, Redux Toolkit for global state, and Expo push notifications.",
     image: healthpalImg,
 
-    githubUrl:
-      "https://github.com/bootcampwise/Healthpal--doctor-Appointment-App.git",
+    githubUrl: "https://github.com/abdulrahman-sde/bootcamp-healthpal-prod.git",
     technologies: [
       { name: "React Native", icon: "/assets/icons/expo.svg" },
       { name: "Supabase", icon: "/assets/icons/supabase.svg" },
@@ -72,7 +71,7 @@ export const projects: Project[] = [
       "An intelligent Resume Analyzer Agent that evaluates candidate resumes and provides structured hiring recommendations with a real-time voice agent. Features resume parsing, scoring logic, explainable decisions, a chatbot for queries, and a live voice agent powered by LiveKit, Deepgram, OpenAI, and ElevenLabs.",
     image: unrollaiImg,
     liveUrl: "https://unroll-ai-resume-analyzer.vercel.app/",
-    githubUrl: "https://github.com/bootcampwise/Ai-resume-analyzer.git",
+    githubUrl: "https://github.com/abdulrahman-sde/Resume-analyzer-prod.git",
     technologies: [
       { name: "LangGraph", icon: "/assets/icons/langgraph.svg" },
       { name: "FastAPI", icon: "/assets/icons/fastapi.svg" },
@@ -96,7 +95,7 @@ export const projects: Project[] = [
       "An AI document assistant with a custom RAG pipeline built from scratch — no LangChain — using Vercel AI SDK and pgvector. Streams AI responses directly into a chat UI with per-locument conversation state. Inngest background jobs automate PDF parsing and embedding generation.",
     image: talkwithpdfImg,
     liveUrl: "https://talkwithpdfs.vercel.app/",
-    githubUrl: "https://github.com/abdulrahman-sde/talk-with-pdfs",
+    githubUrl: "https://github.com/abdulrahman-sde/talkwithpdfs.git",
     technologies: [
       { name: "Next.js 15", icon: "/assets/icons/nextjs2.svg" },
       { name: "Postgres", icon: "/assets/icons/postgres.png" },
@@ -163,7 +162,7 @@ export const projects: Project[] = [
   },
   {
     slug: "suxnix-power-supplements",
-    title: "Suxnix – Nutrition & Supplements Website",
+    title: "Suxnix  ",
     description:
       "A modern, SEO-optimized nutrition and supplements website built with Next.js, TypeScript, Tailwind CSS, and Prismic CMS. Everything loads dynamically from Prismic CMS — including products, blogs, and all landing sections — using SSR/SSG for fast performance and strong SEO.",
     image: suxnixImg,
