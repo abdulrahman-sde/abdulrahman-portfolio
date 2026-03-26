@@ -17,7 +17,7 @@ export const projects: Project[] = [
     slug: "dealport",
     title: "DealPort",
     description:
-      "A full-stack E-Commerce Admin Dashboard with AI-assisted product description generation. Built with a decoupled React/TypeScript frontend and Node.js/Express backend, with strongest focus on Redis session tracking, cron-driven analytics pipelines, and cached aggregated sales data in Upstash Redis.",
+      "A full-stack e-commerce admin dashboard with advanced analytics. It features  visitor session tracking via Upstash Redis, GPT-4o powered content generation with streaming responses, and a nightly cron pipeline that snapshots sales, conversion funnels, and device analytics into daily metric records for high-performance reporting.",
     image: dealportImg,
     liveUrl: "https://dealport-frontened-powy.vercel.app/",
     githubUrl:
@@ -30,11 +30,10 @@ export const projects: Project[] = [
       { name: "Upstash Redis", icon: "/assets/icons/skills/redis.png" },
     ],
     features: [
-      "AI-assisted product description workflow (model-agnostic API integration)",
-      "Redux Toolkit + RTK Query state management",
-      "Upstash Redis session tracking with JWT rotation and HTTP-only cookies",
-      "Cron jobs for daily sales snapshot aggregation",
-      "Cached aggregated analytics data in Upstash Redis",
+      "Redis-backed anonymous-to-customer session tracking with device/geo capture",
+      "Nightly cron aggregates orders, sessions, and funnel metrics into DailyMetrics snapshots",
+      "Redis-cached weekly KPI stats with 1-hour TTL via parallel Promise.all queries",
+      "GPT-4o streaming for SEO product descriptions and admin bio refinement",
     ],
     featured: true,
   },

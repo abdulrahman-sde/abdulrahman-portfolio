@@ -12,12 +12,12 @@ function CompanyAvatar({
 }) {
   if (image) {
     return (
-      <div className="relative h-10 w-10 shrink-0 dark:bg-[#1b1b1b] bg-[#b8b7b730] overflow-hidden rounded-lg border border-border/80  p-1.5 -mt-0.5">
+      <div className="relative h-10 w-10 shrink-0 dark:bg-[#1b1b1b] bg-[#b8b7b730] overflow-hidden rounded-lg border border-border/80 flex items-center px-2 -mt-0.5">
         <Image
           src={image}
           alt={`${name} logo`}
           placeholder="blur"
-          className="object-contain"
+          className="object-contain "
           sizes="36px"
         />
       </div>
@@ -61,7 +61,7 @@ export function ExperienceSection() {
               <div className="min-w-0 flex-1">
                 <div className="flex flex-col justify-between gap-0.5 sm:flex-row sm:items-baseline">
                   <div className="flex min-w-0 flex-wrap items-center gap-2">
-                    <h3 className="truncate font-medium text-foreground">
+                    <h3 className="truncate font-semibold text-foreground">
                       {exp.role}
                     </h3>
                   </div>
