@@ -3,23 +3,24 @@ import { projects } from "@/constants/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.abdulrahmanasif.dev";
+  const now = new Date().toISOString();
 
   const defaultPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1.0,
     },
     {
       url: `${baseUrl}/projects`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
@@ -27,9 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "monthly",
-    priority: 0.6,
+    priority: 0.7,
   }));
 
   return [...defaultPages, ...projectPages];
