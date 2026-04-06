@@ -4,7 +4,13 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { siteConfig } from "@/constants/site";
-import { JsonLd, getWebSiteSchema, getPersonSchema } from "@/components/seo/JsonLd";
+import {
+  JsonLd,
+  getWebSiteSchema,
+  getPersonSchema,
+} from "@/components/seo/JsonLd";
+import Script from "next/script";
+
 import "./globals.css";
 
 const bodyFont = Hanken_Grotesk({
@@ -104,6 +110,7 @@ export default function RootLayout({
         <JsonLd data={getWebSiteSchema()} />
         <JsonLd data={getPersonSchema()} />
       </body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   );
 }
