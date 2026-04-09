@@ -8,7 +8,7 @@ export const siteConfig = {
   description:
     "Abdul Rahman Asif is a full-stack developer and AI engineer specializing in Next.js, React, React Native, and Agentic AI. Explore projects, skills, and experience. Based in Lahore, Pakistan.",
   url: "https://www.abdulrahmanasif.dev",
-  ogImage: "https://www.abdulrahmanasif.dev/avatar.png",
+  ogImage: "/avatar.png",
   email: "abdulrahman.sde@gmail.com",
   jobTitle: "Full-Stack Developer & AI Engineer",
   location: "Lahore, Pakistan",

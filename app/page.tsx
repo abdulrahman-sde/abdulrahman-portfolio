@@ -20,15 +20,31 @@ export const metadata: Metadata = {
     canonical: siteConfig.url,
   },
   openGraph: {
-    title:
-      "Abdul Rahman Asif — Full-Stack Developer & AI Engineer",
+    title: "Abdul Rahman Asif — Full-Stack Developer & AI Engineer",
     description:
       "Software engineer building end-to-end web and mobile products with clean architecture, practical AI integrations, and production-ready execution.",
     url: siteConfig.url,
     type: "profile",
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Abdul Rahman Asif — Full-Stack Developer & AI Engineer",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Abdul Rahman Asif — Full-Stack Developer & AI Engineer | SDE Portfolio",
+    description:
+      "Software engineer building end-to-end web and mobile products with clean architecture, practical AI integrations, and production-ready execution.",
+    images: [siteConfig.ogImage],
   },
 };
-      
+
 export default function Home() {
   return (
     <>
