@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "profile",
   },
 };
-
+      
 export default function Home() {
   return (
     <>

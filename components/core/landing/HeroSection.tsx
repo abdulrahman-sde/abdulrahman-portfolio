@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig, socialLinks } from "@/constants/site";
-import avatar from "@/public/avatar11.png";
+import avatar from "@/public/avatar.png";
 import { FlipWords } from "@/components/ui/FlipWords";
 const words = ["Software Engineer", "Iterator"];
 
@@ -19,7 +19,7 @@ export function HeroSection() {
               alt={siteConfig.name}
               fill
               placeholder="blur"
-              className="object-cover scale-[1.5] object-[-4px_12px]"
+              className="object-cover scale-[1.13] object-[-20px_3px]"
               priority
             />
           </div>
