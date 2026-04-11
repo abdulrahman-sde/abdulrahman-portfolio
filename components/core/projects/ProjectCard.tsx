@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flex h-full flex-col overflow-hidden rounded-xl border bg-[url(/noise.png)] bg-size-[auto_50px]  dark:bg-[#27272b00]">
+    <div className="flex h-full flex-col overflow-hidden rounded-xl border bg-[url(/noise-compressed.png)] bg-size-[auto_50px]  dark:bg-[#27272b00]">
       <Link
         href={`/projects/${project.slug}`}
         className="relative  overflow-hidden bg-muted block aspect-3/2"

@@ -92,7 +92,7 @@
 
 body {
   background-color: var(--background);
-  background-image: url("/noise.png");
+  background-image: url("/noise-compressed.png");
   z-index: -1;
   background-size: 130px 130px;
   background-position: 0 0;
