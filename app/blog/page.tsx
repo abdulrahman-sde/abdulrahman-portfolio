@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/shared/SectionHeader";
 import { BlogCard } from "@/components/core/blogs/BlogCard";
 import { blogPosts } from "@/constants/blog";
 import { siteConfig } from "@/constants/site";
-import { JsonLd, getBreadcrumbSchema } from "@/components/seo/JsonLd";
+import { JsonLd, getBreadcrumbSchema, getBlogCollectionSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Blog — Engineering Insights & Software Development",
@@ -78,6 +78,7 @@ export default function BlogPage() {
           { name: "Blog", url: `${siteConfig.url}/blog` },
         ])}
       />
+      <JsonLd data={getBlogCollectionSchema()} />
     </>
   );
 }

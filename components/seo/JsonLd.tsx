@@ -161,3 +161,54 @@ export function getProjectsCollectionSchema() {
     author: { "@id": `${siteConfig.url}/#person` },
   };
 }
+
+/** CollectionPage schema — for blog listing page */
+export function getBlogCollectionSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Blog — Engineering Insights & Software Development",
+    description:
+      "Read engineering articles on full-stack development, React, Next.js, AI integrations, and software architecture.",
+    url: `${siteConfig.url}/blog`,
+    isPartOf: { "@id": `${siteConfig.url}/#website` },
+    author: { "@id": `${siteConfig.url}/#person` },
+  };
+}
+
+/** Article schema — for single blog posts */
+export function getArticleSchema(post: {
+  title: string;
+  description: string;
+  slug: string;
+  date: string;
+  tags?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    image: siteConfig.ogImage,
+    author: {
+      "@type": "Person",
+      name: siteConfig.fullName,
+      url: siteConfig.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: `${siteConfig.fullName} — Portfolio`,
+      logo: {
+        "@type": "ImageObject",
+        url: siteConfig.ogImage,
+      },
+    },
+    datePublished: new Date(post.date).toISOString(),
+    dateModified: new Date(post.date).toISOString(),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/blog/${post.slug}`,
+    },
+    keywords: post.tags?.join(", ") || "",
+  };
+}

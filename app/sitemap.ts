@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { projects } from "@/constants/projects";
+import { blogPosts } from "@/constants/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.abdulrahmanasif.dev";
@@ -33,5 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...defaultPages, ...projectPages];
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.date ? new Date(post.date).toISOString() : now,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [...defaultPages, ...projectPages, ...blogPages];
 }
