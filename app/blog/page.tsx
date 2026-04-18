@@ -26,7 +26,7 @@ export default function BlogPage() {
   const sorted = [...blogPosts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
-  const isComingSoonFromContentful = true;
+  const isComingSoonFromContentful = false;
   return (
     <>
       <Container className="py-16">
@@ -43,8 +43,8 @@ export default function BlogPage() {
             </h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-muted-foreground ">
               I&apos;m preparing practical write-ups on engineering decisions,
-              product building, and lessons from real projects. The first articles
-              will be published here soon.
+              product building, and lessons from real projects. The first
+              articles will be published here soon.
             </p>
           </div>
         ) : (

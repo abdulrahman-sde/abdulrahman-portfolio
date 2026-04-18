@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+
   trailingSlash: false,
   async headers() {
     return [
@@ -28,5 +31,8 @@ const nextConfig: NextConfig = {
     ];
   },
 };
+const withMDX = createMDX({
+  // Add markdown plugins here, as desired
+});
 
-export default nextConfig;
+export default withMDX(nextConfig);
