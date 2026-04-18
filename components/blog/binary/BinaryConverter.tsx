@@ -22,10 +22,11 @@ function CharacterBreakdown({ char, index }: { char: string; index: number }) {
         damping: 18,
         delay: index * 0.06,
       }}
-      className="flex items-center gap-3 rounded-lg border border-border/60 bg-card/50 px-4 py-3"
+      className="flex w-full items-center gap-2 overflow-x-auto rounded-lg border border-border/60 bg-card/50 \
+        bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-3 py-3 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-3 sm:px-4 [&::-webkit-scrollbar]:hidden"
     >
       {/* Character */}
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-foreground/[0.04] font-serif text-lg font-semibold text-foreground dark:bg-foreground/[0.08]">
+      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-foreground/[0.04] font-serif text-base font-semibold text-foreground sm:h-10 sm:w-10 sm:text-lg dark:bg-foreground/[0.02]">
         {char === " " ? "␣" : char}
       </span>
 
@@ -81,7 +82,7 @@ function CharacterBreakdown({ char, index }: { char: string; index: number }) {
               damping: 15,
               delay: index * 0.06 + i * 0.03,
             }}
-            className={`flex h-7 w-7 items-center justify-center rounded font-mono text-xs font-medium tabular-nums transition-colors duration-200 ${
+            className={`flex h-6 w-6 shrink-0 items-center justify-center rounded font-mono text-[10px] font-medium tabular-nums transition-colors duration-200 sm:h-7 sm:w-7 sm:text-xs ${
               bit === "1"
                 ? "bg-foreground text-background"
                 : "bg-foreground/[0.06] text-muted-foreground dark:bg-foreground/[0.1]"
@@ -127,7 +128,7 @@ export function BinaryConverter() {
   }, [input, characters, mode]);
 
   return (
-    <div className="my-8 overflow-hidden rounded-xl border border-border/60 bg-card/30">
+    <div className="my-8 overflow-hidden rounded-xl border border-border/60 bg-[url(/noise-compressed.png)] bg-size-[auto_50px] dark:bg-[#27272b00]">
       {/* Header */}
       <div className="flex items-center justify-between border-b border-border/60 px-5 py-3">
         <div className="flex items-center gap-2">
@@ -138,7 +139,7 @@ export function BinaryConverter() {
         </div>
 
         {/* Mode toggle */}
-        <div className="flex rounded-md border border-border/60 text-[11px]">
+        <div className="flex shrink-0 rounded-md border border-border/60 text-[11px]">
           <button
             onClick={() => {
               setMode("encode");
@@ -179,7 +180,7 @@ export function BinaryConverter() {
           onChange={(e) => setInput(e.target.value)}
           placeholder={mode === "encode" ? "Hello" : "01001000 01101001"}
           maxLength={mode === "encode" ? 12 : 96}
-          className="w-full rounded-md border border-border/60 bg-background px-3 py-2 font-mono text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/40 focus:border-foreground/20"
+          className="w-full rounded-md border border-border/60 bg-background bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-3 py-2 font-mono text-xs text-foreground outline-none transition-colors placeholder:text-muted-foreground/40 focus:border-foreground/20 sm:text-sm"
           spellCheck={false}
         />
       </div>
@@ -188,7 +189,7 @@ export function BinaryConverter() {
       <div className="px-5 py-4">
         {/* Result line */}
         {binaryOutput && (
-          <div className="mb-4 rounded-md bg-foreground/[0.03] px-4 py-2.5 dark:bg-foreground/[0.05]">
+          <div className="mb-4 rounded-md bg-foreground/[0.03] bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-4 py-2.5 dark:bg-foreground/[0.05]">
             <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
               {mode === "encode" ? "Binary output" : "Decoded text"}
             </span>

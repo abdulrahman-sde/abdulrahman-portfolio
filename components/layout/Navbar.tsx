@@ -29,7 +29,7 @@ export function Navbar() {
               className="hidden   dark:block"
             />
           </div>
-          <span className="text-sm font-medium tracking-tight">
+          <span className="text-sm hidden sm:block font-medium tracking-tight">
             {siteConfig.name}
           </span>
         </Link>

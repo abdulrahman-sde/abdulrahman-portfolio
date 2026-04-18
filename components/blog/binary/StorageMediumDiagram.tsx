@@ -62,8 +62,8 @@ function WireDiagram({ bits }: { bits: number[] }) {
 /* ──────────────────────────────────────────────────────────── */
 function RamDiagram({ bits }: { bits: number[] }) {
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="grid grid-cols-8 gap-2">
+    <div className="flex w-full flex-col items-center gap-4">
+      <div className="flex w-full justify-between gap-1 overflow-x-auto sm:grid sm:grid-cols-8 sm:gap-2">
         {bits.map((bit, i) => (
           <motion.div
             key={i}
@@ -169,8 +169,8 @@ function HddDiagram({ bits }: { bits: number[] }) {
 /* ──────────────────────────────────────────────────────────── */
 function SsdDiagram({ bits }: { bits: number[] }) {
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="grid grid-cols-8 gap-2">
+    <div className="flex w-full flex-col items-center gap-4">
+      <div className="flex w-full justify-between gap-1 overflow-x-auto sm:grid sm:grid-cols-8 sm:gap-2">
         {bits.map((bit, i) => (
           <motion.div
             key={i}
@@ -322,7 +322,7 @@ export function StorageMediumDiagram() {
   };
 
   return (
-    <div className="my-8 overflow-hidden rounded-xl border border-border/60 bg-card/30">
+    <div className="my-8 overflow-hidden rounded-xl border border-border/60 bg-[url(/noise-compressed.png)] bg-size-[auto_50px] dark:bg-[#27272b00]">
       {/* Header */}
       <div className="flex items-center justify-between border-b border-border/60 px-5 py-3">
         <div className="flex items-center gap-2">
@@ -385,20 +385,19 @@ export function StorageMediumDiagram() {
         <span className="mb-2 block text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
           Edit the byte
         </span>
-        <div className="flex gap-[3px]">
+        <div className="flex gap-2 py-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {bits.map((bit, i) => (
-            <motion.button
+            <button
               key={i}
               onClick={() => toggleBit(i)}
-              whileTap={{ scale: 0.92 }}
-              className={`flex h-9 w-9 items-center justify-center rounded font-mono text-sm font-medium tabular-nums transition-colors duration-150 ${
+              className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md font-mono text-[11px] font-medium tabular-nums transition-all active:translate-y-[2px] active:shadow-none sm:h-8 sm:w-8 sm:text-xs ${
                 bit === 1
-                  ? 'bg-foreground text-background'
-                  : 'bg-foreground/[0.06] text-muted-foreground hover:bg-foreground/[0.1] dark:bg-foreground/[0.1] dark:hover:bg-foreground/[0.15]'
+                  ? 'bg-foreground text-background shadow-[0_2px_0_0_rgba(0,0,0,0.4)] dark:shadow-[0_2px_0_0_rgba(255,255,255,0.4)]'
+                  : 'bg-foreground/[0.04] text-muted-foreground shadow-[0_2px_0_0_rgba(0,0,0,0.1)] hover:bg-foreground/[0.08] dark:bg-foreground/[0.06] dark:shadow-[0_2px_0_0_rgba(255,255,255,0.1)] dark:hover:bg-foreground/[0.1]'
               }`}
             >
               {bit}
-            </motion.button>
+            </button>
           ))}
         </div>
       </div>
