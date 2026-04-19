@@ -65,7 +65,7 @@ export function HeroSection() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href="/abdulrahman.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[14px] font-medium text-muted-foreground transition-colors duration-150 hover:text-foreground"
