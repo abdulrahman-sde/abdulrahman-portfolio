@@ -8,4 +8,5 @@ export interface Experience {
   description: string;
   highlights?: string[];
   current?: boolean;
+  tools?: string[];
 }

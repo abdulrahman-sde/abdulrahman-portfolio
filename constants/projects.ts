@@ -9,9 +9,9 @@ import storeitImg from "@/public/assets/images/store-it.png";
 import talkwithpdfImg from "@/public/assets/images/talkwithpdf.png";
 import unrollaiImg from "@/public/assets/images/unroll-ai.png";
 import astraBotImg from "@/public/assets/images/astrabot.png";
-import weatherImg from "@/public/assets/images/weather.png";
 import midnightFusionImg from "@/public/assets/images/midnightFusion.jpeg";
 import suxnixImg from "@/public/assets/images/suxnix.png";
+import kairouiImg from "@/public/assets/images/kairoui.png";
 export const projects: Project[] = [
   {
     slug: "dealport",
@@ -88,6 +88,30 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "kairoui",
+    title: "Kairo UI",
+    description:
+      "A growing collection of free, modern landing page templates built for developers. Copy, customize, and ship without sign-ups or paywalls.",
+    image: kairouiImg,
+    liveUrl: "https://ui.abdulrahmanasif.dev/",
+    githubUrl: "https://github.com/abdulrahman-sde/ui-abdulrahman-dev.git",
+    technologies: [
+      { name: "Next.js", icon: "/assets/icons/nextjs2.svg" },
+      { name: "TypeScript", icon: "/assets/icons/typescript.svg" },
+      { name: "React", icon: "/assets/icons/react.svg" },
+      { name: "Tailwind CSS", icon: "/assets/icons/tailwindcss.svg" },
+      { name: "Shadcn UI", icon: "/assets/icons/shadcn-ui.svg" },
+    ],
+    features: [
+      "Free landing page templates ready to copy and paste",
+      "Built with Next.js 15, React 19, and Tailwind CSS",
+      "Fully responsive and customizable layouts",
+      "No sign-ups, no paywalls — developer-first approach",
+    ],
+    featured: true,
+  },
+
+  {
     slug: "chat-with-pdfs",
     title: "Talk with PDFs",
     description:
@@ -109,7 +133,6 @@ export const projects: Project[] = [
       "Background PDF parsing & embedding generation via Inngest",
       "Contextual answers using OpenAI + Vercel AI SDK",
     ],
-    featured: true,
   },
 
   // ── Full-Stack Applications (Medium-High Complexity) ─────────
@@ -296,27 +319,6 @@ export const projects: Project[] = [
       "Optimized for readability and reduced eye strain",
       "Custom syntax highlighting for popular languages",
       "Consistent styling across UI components",
-    ],
-  },
-
-  {
-    slug: "weather-app",
-    title: "Weather App",
-    description:
-      "A real-time weather application powered by the OpenWeather API. Features weather alerts, location-based forecasts, and a responsive design for both web and mobile.",
-    image: weatherImg,
-    liveUrl: "https://abdulrahman-weather-app.netlify.app/",
-    githubUrl: "https://github.com/abdulrehman-codecrafter/Weather-app.git",
-    technologies: [
-      { name: "HTML", icon: "/assets/icons/html5.svg" },
-      { name: "CSS", icon: "/assets/icons/css3.svg" },
-      { name: "OpenWeather API", icon: "/assets/images/openweather.png" },
-      { name: "JavaScript", icon: "/assets/icons/js.svg" },
-    ],
-    features: [
-      "Real-time weather updates",
-      "Weather alerts and forecasts",
-      "Responsive design for web and mobile",
     ],
   },
 ];

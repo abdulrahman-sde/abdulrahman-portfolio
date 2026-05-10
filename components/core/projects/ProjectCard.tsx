@@ -68,30 +68,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {project.description}
         </p>
 
-        {/* Tech icons row */}
-        {/* <div className="mt-auto flex items-center gap-3 pt-4">
-          <div className="flex -space-x-1">
-            {project.technologies.slice(0, 5).map((tech, i) => (
-              <div
-                key={tech.name}
-                className="relative h-6 w-6 overflow-hidden rounded-full border-2 border-card bg-muted transition-transform duration-200 hover:z-10 hover:scale-110"
-                style={{ zIndex: 5 - i }}
-                title={tech.name}
-              >
-                <Image
-                  src={tech.icon}
-                  alt={tech.name}
-                  fill
-                  className="object-contain p-0.5"
-                />
-              </div>
-            ))}
-          </div>
-          <span className="text-[11px] text-muted-foreground">
-            {project.technologies.map((t) => t.name).join(" · ")}
-          </span>
-        </div> */}
-
         {/* Links */}
         <div className=" pt-5 flex items-center ">
           {project.liveUrl && (

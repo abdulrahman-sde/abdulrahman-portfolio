@@ -15,6 +15,7 @@ export const experiences: Experience[] = [
       "Built stronger full-stack execution across Next.js, MERN, React Native, and FastAPI by shipping complete product workflows end to end.",
       "Developed practical engineering judgment in architecture decisions, API integration, state management, and production deployment.",
     ],
+    tools: ["Next.js", "React Native", "FastAPI", "MongoDB"],
   },
   {
     company: "Aivex",
@@ -28,5 +29,6 @@ export const experiences: Experience[] = [
       "Integrated REST APIs and shipped stable CRUD flows used in core product screens.",
       "Fixed UI bottlenecks and improved responsiveness across key user journeys.",
     ],
+    tools: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
   },
 ];
