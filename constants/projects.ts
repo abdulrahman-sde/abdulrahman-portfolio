@@ -93,7 +93,7 @@ export const projects: Project[] = [
     description:
       "A growing collection of free, modern landing page templates built for developers. Copy, customize, and ship without sign-ups or paywalls.",
     image: kairouiImg,
-    liveUrl: "https://ui.abdulrahmanasif.dev/",
+    liveUrl: "https://www.kairoui.com/",
     githubUrl: "https://github.com/abdulrahman-sde/ui-abdulrahman-dev.git",
     technologies: [
       { name: "Next.js", icon: "/assets/icons/nextjs2.svg" },
