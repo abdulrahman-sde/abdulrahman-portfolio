@@ -27,7 +27,7 @@ const explicitTheme = {
     "#78716c", // --accent (max)
   ],
   dark: [
-    "#292524", // empty — matches --border dark (slightly visible)
+    "#29252484", // empty — matches --border dark (slightly visible)
     "#44403c", // stone-700
     "#57534e", // stone-600
     "#78716c", // stone-500
@@ -43,7 +43,7 @@ export default function GithubCalendar() {
     <div className="mb-2 w-full rounded-xl p-4">
       <GitHubCalendar
         username="abdulrahman-sde"
-        className="github-calendar"
+        className="github-calendar "
         blockSize={11.7}
         blockRadius={3}
         colorScheme={isDark ? "dark" : "light"}
@@ -53,7 +53,7 @@ export default function GithubCalendar() {
         showColorLegend
         transformData={transformToLastMonths}
         fontSize={13}
-        // theme={explicitTheme}
+        theme={explicitTheme}
       />
     </div>
   );
