@@ -12,7 +12,7 @@ export default function NamePlayer() {
       onClick={() => {
         play();
         setBouncing(true);
-        setTimeout(() => setBouncing(false), 400);
+        setTimeout(() => setBouncing(false), 200);
       }}
       className="cursor-pointer -ms-2 px-2"
     >
