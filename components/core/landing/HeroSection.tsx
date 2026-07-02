@@ -3,6 +3,7 @@ import Link from "next/link";
 import { siteConfig, socialLinks } from "@/constants/site";
 import avatar from "@/public/avatar.png";
 import { FlipWords } from "@/components/ui/FlipWords";
+import NamePlayer from "./NamePlayer";
 const words = ["Software Engineer", "Iterator"];
 
 export function HeroSection() {
@@ -24,9 +25,12 @@ export function HeroSection() {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <h1 className=" text-[25px] font-bold tracking-tighter text-foreground sm:text-[28px]">
-              {siteConfig.name}
-            </h1>
+            <div className="flex items-center  gap-2">
+              <h1 className=" text-[25px] font-bold tracking-tighter text-foreground sm:text-[28px]">
+                {siteConfig.name}
+              </h1>
+              <NamePlayer />
+            </div>
             <FlipWords
               words={words}
               duration={1000}
