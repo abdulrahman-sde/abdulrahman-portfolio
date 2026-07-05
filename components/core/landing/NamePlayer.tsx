@@ -14,10 +14,10 @@ export default function NamePlayer() {
         setBouncing(true);
         setTimeout(() => setBouncing(false), 200);
       }}
-      className="cursor-pointer -ms-2 px-2"
+      className="cursor-pointer -ms-2 p-2"
     >
       <SpeakerIcon
-        className={`mt-1.5 cursor-pointer ${bouncing ? "animate-bounce-click" : ""}`}
+        className={`w-3.5 -ms-0.5  mt-2 cursor-pointer ${bouncing ? "animate-bounce-click" : ""}`}
       />
     </div>
   );
