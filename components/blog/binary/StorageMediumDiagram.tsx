@@ -14,7 +14,7 @@ const TABS: { id: Medium; label: string; color: string }[] = [
 ];
 
 /* ──────────────────────────────────────────────────────────── */
-/* Wire — Voltage square wave                                  */
+/* Wire - Voltage square wave                                  */
 /* ──────────────────────────────────────────────────────────── */
 function WireDiagram({ bits }: { bits: number[] }) {
   const highY = 25;
@@ -58,7 +58,7 @@ function WireDiagram({ bits }: { bits: number[] }) {
 }
 
 /* ──────────────────────────────────────────────────────────── */
-/* RAM — Capacitor grid                                        */
+/* RAM - Capacitor grid                                        */
 /* ──────────────────────────────────────────────────────────── */
 function RamDiagram({ bits }: { bits: number[] }) {
   return (
@@ -102,14 +102,14 @@ function RamDiagram({ bits }: { bits: number[] }) {
         ))}
       </div>
       <p className="text-center text-[11px] text-muted-foreground/50">
-        Charged capacitor = 1, discharged = 0. Charge leaks over milliseconds — that is why RAM needs constant refreshing.
+        Charged capacitor = 1, discharged = 0. Charge leaks over milliseconds; that is why RAM needs constant refreshing.
       </p>
     </div>
   );
 }
 
 /* ──────────────────────────────────────────────────────────── */
-/* HDD — Magnetic domains on platter                           */
+/* HDD - Magnetic domains on platter                           */
 /* ──────────────────────────────────────────────────────────── */
 function HddDiagram({ bits }: { bits: number[] }) {
   return (
@@ -158,14 +158,14 @@ function HddDiagram({ bits }: { bits: number[] }) {
         })}
       </svg>
       <p className="text-center text-[11px] text-muted-foreground/50">
-        Each magnetic domain points North (1) or South (0). Data persists without power — the magnetization holds.
+        Each magnetic domain points North (1) or South (0). Data persists without power; the magnetization holds.
       </p>
     </div>
   );
 }
 
 /* ──────────────────────────────────────────────────────────── */
-/* SSD — Floating gate transistors                              */
+/* SSD - Floating gate transistors                              */
 /* ──────────────────────────────────────────────────────────── */
 function SsdDiagram({ bits }: { bits: number[] }) {
   return (
@@ -236,7 +236,7 @@ function SsdDiagram({ bits }: { bits: number[] }) {
 }
 
 /* ──────────────────────────────────────────────────────────── */
-/* Fiber — Light pulses                                        */
+/* Fiber - Light pulses                                        */
 /* ──────────────────────────────────────────────────────────── */
 function FiberDiagram({ bits }: { bits: number[] }) {
   return (
@@ -322,9 +322,9 @@ export function StorageMediumDiagram() {
   };
 
   return (
-    <div className="my-8 overflow-hidden rounded-xl border border-border/60 bg-[url(/noise-compressed.png)] bg-size-[auto_50px] dark:bg-[#27272b00]">
+    <div className="my-6 overflow-hidden rounded-xl border border-border/60 bg-[#c1bebe2d] bg-[url(/noise-compressed.png)] bg-[size:auto_50px] dark:bg-[#a8a29e12]">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-border/60 px-5 py-3">
+      <div className="flex items-center justify-between border-b border-border/60 px-4 py-2.5">
         <div className="flex items-center gap-2">
           <motion.div
             className="h-2 w-2 rounded-full"
@@ -346,7 +346,7 @@ export function StorageMediumDiagram() {
           <button
             key={tab.id}
             onClick={() => setActiveMedium(tab.id)}
-            className={`relative whitespace-nowrap px-4 py-2.5 text-xs font-medium transition-colors ${
+            className={`relative whitespace-nowrap px-3 py-2 text-xs font-medium transition-colors ${
               activeMedium === tab.id
                 ? 'text-foreground'
                 : 'text-muted-foreground/60 hover:text-muted-foreground'

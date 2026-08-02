@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { ProjectCard } from "@/components/core/projects/ProjectCard";
+import { ProjectGrid } from "@/components/core/projects/ProjectGrid";
 import { projects } from "@/constants/projects";
 
 export function FeaturedProjectsSection() {
@@ -11,17 +11,7 @@ export function FeaturedProjectsSection() {
       <div className="animate-fade-in " style={{ animationDelay: "0ms" }}>
         <SectionHeader label="Work" title="Featured Projects" />
       </div>
-      <div className="grid gap-6 md:grid-cols-2">
-        {featured.map((project, i) => (
-          <div
-            key={project.slug}
-            className="animate-fade-in "
-            style={{ animationDelay: `${80 + i * 80}ms` }}
-          >
-            <ProjectCard project={project} />
-          </div>
-        ))}
-      </div>
+      <ProjectGrid projects={featured} />
       <div
         className="animate-fade-in  mt-8 text-center"
         style={{ animationDelay: "400ms" }}

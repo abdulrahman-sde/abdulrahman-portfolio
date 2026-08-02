@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
-    template: `%s — ${siteConfig.fullName}`,
+    template: `%s - ${siteConfig.fullName}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    siteName: `${siteConfig.fullName} — Portfolio`,
+    siteName: `${siteConfig.fullName} - Portfolio`,
     title: siteConfig.title,
     description: siteConfig.description,
     images: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: `${siteConfig.fullName} — Full-Stack Developer & AI Engineer`,
+        alt: `${siteConfig.fullName} - Full-Stack Developer & AI Engineer`,
         type: "image/png",
       },
     ],
@@ -93,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${bodyFont.variable} ${headingFont.variable} font-sans antialiased`}
+        className={`${bodyFont.variable} ${headingFont.variable} font-sans antialiased bg-neutral-100`}
       >
         <ThemeProvider
           attribute="class"

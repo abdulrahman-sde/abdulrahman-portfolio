@@ -19,7 +19,7 @@ export function JsonLd({ data }: JsonLdProps) {
 
 import { siteConfig } from "@/constants/site";
 
-/** Person schema — used on homepage */
+/** Person schema - used on homepage */
 export function getPersonSchema() {
   return {
     "@context": "https://schema.org",
@@ -70,13 +70,13 @@ export function getPersonSchema() {
   };
 }
 
-/** WebSite schema — used globally in layout */
+/** WebSite schema - used globally in layout */
 export function getWebSiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${siteConfig.url}/#website`,
-    name: `${siteConfig.fullName} — Portfolio`,
+    name: `${siteConfig.fullName} - Portfolio`,
     url: siteConfig.url,
     description: siteConfig.description,
     author: { "@id": `${siteConfig.url}/#person` },
@@ -85,13 +85,13 @@ export function getWebSiteSchema() {
   };
 }
 
-/** ProfilePage schema — homepage */
+/** ProfilePage schema - homepage */
 export function getProfilePageSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "@id": `${siteConfig.url}/#profilepage`,
-    name: `${siteConfig.fullName} — Software Engineer Portfolio`,
+    name: `${siteConfig.fullName} - Software Engineer Portfolio`,
     url: siteConfig.url,
     description: siteConfig.description,
     mainEntity: { "@id": `${siteConfig.url}/#person` },
@@ -99,7 +99,7 @@ export function getProfilePageSchema() {
   };
 }
 
-/** BreadcrumbList schema — for interior pages */
+/** BreadcrumbList schema - for interior pages */
 export function getBreadcrumbSchema(
   items: { name: string; url: string }[]
 ) {
@@ -115,7 +115,7 @@ export function getBreadcrumbSchema(
   };
 }
 
-/** SoftwareApplication / CreativeWork schema — for individual projects */
+/** SoftwareApplication / CreativeWork schema - for individual projects */
 export function getProjectSchema(project: {
   title: string;
   description: string;
@@ -148,26 +148,26 @@ export function getProjectSchema(project: {
   };
 }
 
-/** CollectionPage schema — for projects listing page */
+/** CollectionPage schema - for projects listing page */
 export function getProjectsCollectionSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Projects — Full-Stack & AI Portfolio",
-    description:
-      "Full-stack and AI projects by Abdul Rahman Asif — agentic pipelines, RAG systems, mobile apps, and developer tools.",
+    name: "Projects - Full-Stack & AI Portfolio",
+      description:
+        "Full-stack and AI projects by Abdul Rahman Asif including agentic pipelines, RAG systems, mobile apps, and developer tools.",
     url: `${siteConfig.url}/projects`,
     isPartOf: { "@id": `${siteConfig.url}/#website` },
     author: { "@id": `${siteConfig.url}/#person` },
   };
 }
 
-/** CollectionPage schema — for blog listing page */
+/** CollectionPage schema - for blog listing page */
 export function getBlogCollectionSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Blog — Engineering Insights & Software Development",
+    name: "Blog - Engineering Insights & Software Development",
     description:
       "Read engineering articles on full-stack development, React, Next.js, AI integrations, and software architecture.",
     url: `${siteConfig.url}/blog`,
@@ -176,7 +176,7 @@ export function getBlogCollectionSchema() {
   };
 }
 
-/** Article schema — for single blog posts */
+/** Article schema - for single blog posts */
 export function getArticleSchema(post: {
   title: string;
   description: string;
@@ -197,7 +197,7 @@ export function getArticleSchema(post: {
     },
     publisher: {
       "@type": "Organization",
-      name: `${siteConfig.fullName} — Portfolio`,
+name: `${siteConfig.fullName} - Portfolio`,
       logo: {
         "@type": "ImageObject",
         url: siteConfig.ogImage,

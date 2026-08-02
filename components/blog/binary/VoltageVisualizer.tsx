@@ -50,9 +50,9 @@ export function VoltageVisualizer() {
   const char = String.fromCharCode(parseInt(bits.join(''), 2));
 
   return (
-    <div className="my-8 overflow-hidden rounded-xl border border-border/60 bg-[url(/noise-compressed.png)] bg-size-[auto_50px] dark:bg-[#27272b00]">
+    <div className="my-6 overflow-hidden rounded-xl border border-border/60 bg-[#c1bebe2d] bg-[url(/noise-compressed.png)] bg-[size:auto_50px] dark:bg-[#a8a29e12]">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-border/60 px-5 py-3">
+      <div className="flex items-center justify-between border-b border-border/60 px-4 py-2.5">
         <div className="flex items-center gap-2">
           <div className="h-2 w-2 rounded-full bg-amber-500/80" />
           <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
@@ -65,7 +65,7 @@ export function VoltageVisualizer() {
       </div>
 
       {/* Waveform SVG */}
-      <div className="px-5 py-6">
+      <div className="px-4 py-4">
         <div className="overflow-x-auto">
           <svg
             viewBox={`-40 0 ${WIRE_LENGTH + 80} ${MID_Y + 40}`}
@@ -142,16 +142,16 @@ export function VoltageVisualizer() {
         </div>
 
         {/* Interactive bit toggles */}
-        <div className="mt-5">
+        <div className="mt-4">
           <span className="mb-2 block text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
             Toggle bits
           </span>
-          <div className="flex gap-2 py-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex gap-1.5 py-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {bits.map((bit, i) => (
               <button
                 key={i}
                 onClick={() => toggleBit(i)}
-                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md font-mono text-[11px] font-medium tabular-nums transition-all active:translate-y-[2px] active:shadow-none sm:h-8 sm:w-8 sm:text-xs ${
+                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md font-mono text-[11px] font-medium tabular-nums transition-all active:translate-y-[2px] active:shadow-none sm:h-7 sm:w-7 ${
                   bit === 1
                     ? 'bg-foreground text-background shadow-[0_2px_0_0_rgba(0,0,0,0.4)] dark:shadow-[0_2px_0_0_rgba(255,255,255,0.4)]'
                     : 'bg-foreground/[0.04] text-muted-foreground shadow-[0_2px_0_0_rgba(0,0,0,0.1)] hover:bg-foreground/[0.08] dark:bg-foreground/[0.06] dark:shadow-[0_2px_0_0_rgba(255,255,255,0.1)] dark:hover:bg-foreground/[0.1]'

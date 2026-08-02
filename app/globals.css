@@ -19,6 +19,9 @@
   --accent: #78716c;
   --accent-foreground: #ffffff;
 
+  /* Hover spotlight glow (Aceternity) */
+  --glow: #e5e5e5;
+
   /* Spacing scale (rem) */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -61,6 +64,8 @@
   --accent: #a8a29e;
   --accent-foreground: #0c0a09;
 
+  --glow: rgb(30 41 59 / 0.8);
+
   --scrollbar-track: color-mix(in srgb, var(--muted) 86%, var(--background));
   --scrollbar-thumb: color-mix(in srgb, var(--accent) 65%, var(--background));
   --scrollbar-thumb-hover: color-mix(in srgb, var(--accent) 82%, white);
@@ -77,6 +82,7 @@
   --color-ring: var(--ring);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-glow: var(--glow);
   --font-sans: var(--font-hanken-grotesk);
   --font-serif: var(--font-space-grotesk);
   --font-grotesk: var(--font-space-grotesk);

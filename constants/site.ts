@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Abdul Rahman",
   fullName: "Abdul Rahman Asif",
   title:
-    "Abdul Rahman Asif — Full-Stack Developer & AI Engineer | Software Engineer Portfolio",
+    "Abdul Rahman Asif - Full-Stack Developer & AI Engineer | Software Engineer Portfolio",
   description:
     "Abdul Rahman Asif is a full-stack developer and AI engineer specializing in Next.js, React, React Native, and Agentic AI. Explore projects, skills, and experience. Based in Lahore, Pakistan.",
   url: "https://www.abdulrahmanasif.dev",

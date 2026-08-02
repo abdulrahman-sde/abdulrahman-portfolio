@@ -91,7 +91,7 @@ const STAGES = [
     id: "cpu",
     label: "CPU Register",
     description:
-      "The processor stores the byte in a register — a tiny set of flip-flop circuits made of transistors that hold charge.",
+      "The processor stores the byte in a register; a tiny set of flip-flop circuits made of transistors that hold charge.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <rect
@@ -200,7 +200,7 @@ const STAGES = [
     id: "disk",
     label: "Storage (SSD)",
     description:
-      "When saved, bits become electrons trapped in floating-gate transistors — persisting without power.",
+      "When saved, bits become electrons trapped in floating-gate transistors, persisting without power.",
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
         <rect
@@ -281,12 +281,12 @@ export function BitJourney() {
         <div className="px-5 py-8">
           {/* Vertical journey on mobile, horizontal on desktop */}
           <div className="relative">
-            {/* Connection line — vertical on mobile */}
+            {/* Connection line - vertical on mobile */}
             <div className="absolute left-7 top-14 bottom-14 w-px bg-border/40 md:hidden">
               <div className="absolute inset-x-0 top-0 h-full bg-foreground/20" />
             </div>
 
-            {/* Connection line — horizontal on desktop */}
+            {/* Connection line - horizontal on desktop */}
             <div className="absolute top-7 left-[56px] right-[56px] hidden h-px bg-border/40 md:block">
               <div className="absolute inset-y-0 left-0 h-full w-full bg-foreground/20" />
             </div>

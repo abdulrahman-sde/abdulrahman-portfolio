@@ -22,11 +22,10 @@ function CharacterBreakdown({ char, index }: { char: string; index: number }) {
         damping: 18,
         delay: index * 0.06,
       }}
-      className="flex w-full items-center gap-2 overflow-x-auto rounded-lg border border-border/60 bg-card/50 \
-        bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-3 py-3 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-3 sm:px-4 [&::-webkit-scrollbar]:hidden"
+      className="flex w-full items-center gap-2 overflow-x-auto rounded-lg border border-border/60 bg-[#c1bebe2d] bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-3 py-2 dark:bg-[#a8a29e12] [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
       {/* Character */}
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-foreground/[0.04] font-serif text-base font-semibold text-foreground sm:h-10 sm:w-10 sm:text-lg dark:bg-foreground/[0.02]">
+      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-background/60 font-serif text-sm font-semibold text-foreground sm:h-9 sm:w-9 dark:bg-background/40">
         {char === " " ? "␣" : char}
       </span>
 
@@ -82,10 +81,10 @@ function CharacterBreakdown({ char, index }: { char: string; index: number }) {
               damping: 15,
               delay: index * 0.06 + i * 0.03,
             }}
-            className={`flex h-6 w-6 shrink-0 items-center justify-center rounded font-mono text-[10px] font-medium tabular-nums transition-colors duration-200 sm:h-7 sm:w-7 sm:text-xs ${
+            className={`flex h-5 w-5 shrink-0 items-center justify-center rounded font-mono text-[9px] font-medium tabular-nums transition-colors duration-200 sm:h-6 sm:w-6 sm:text-[11px] ${
               bit === "1"
                 ? "bg-foreground text-background"
-                : "bg-foreground/[0.06] text-muted-foreground dark:bg-foreground/[0.1]"
+                : "bg-background/60 text-muted-foreground dark:bg-background/40"
             }`}
           >
             {bit}
@@ -128,9 +127,9 @@ export function BinaryConverter() {
   }, [input, characters, mode]);
 
   return (
-    <div className="my-8 overflow-hidden rounded-xl border border-border/60 bg-[url(/noise-compressed.png)] bg-size-[auto_50px] dark:bg-[#27272b00]">
+    <div className="my-6 overflow-hidden rounded-xl border border-border/60 bg-[#c1bebe2d] bg-[url(/noise-compressed.png)] bg-[size:auto_50px] dark:bg-[#a8a29e12]">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-border/60 px-5 py-3">
+      <div className="flex items-center justify-between border-b border-border/60 px-4 py-2.5">
         <div className="flex items-center gap-2">
           <div className="h-2 w-2 rounded-full bg-emerald-500/80" />
           <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
@@ -145,7 +144,7 @@ export function BinaryConverter() {
               setMode("encode");
               setInput("Hi");
             }}
-            className={`px-3 py-1.5 font-medium transition-colors ${
+            className={`px-3 py-1 font-medium transition-colors ${
               mode === "encode"
                 ? "bg-foreground/[0.06] text-foreground dark:bg-foreground/[0.1]"
                 : "text-muted-foreground hover:text-foreground"
@@ -158,7 +157,7 @@ export function BinaryConverter() {
               setMode("decode");
               setInput("01001000 01101001");
             }}
-            className={`border-l border-border/60 px-3 py-1.5 font-medium transition-colors ${
+            className={`border-l border-border/60 px-3 py-1 font-medium transition-colors ${
               mode === "decode"
                 ? "bg-foreground/[0.06] text-foreground dark:bg-foreground/[0.1]"
                 : "text-muted-foreground hover:text-foreground"
@@ -170,7 +169,7 @@ export function BinaryConverter() {
       </div>
 
       {/* Input */}
-      <div className="border-b border-border/40 px-5 py-4">
+      <div className="border-b border-border/40 px-4 py-3">
         <label className="mb-1.5 block text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
           {mode === "encode" ? "Type something" : "Enter binary"}
         </label>
@@ -180,16 +179,16 @@ export function BinaryConverter() {
           onChange={(e) => setInput(e.target.value)}
           placeholder={mode === "encode" ? "Hello" : "01001000 01101001"}
           maxLength={mode === "encode" ? 12 : 96}
-          className="w-full rounded-md border border-border/60 bg-background bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-3 py-2 font-mono text-xs text-foreground outline-none transition-colors placeholder:text-muted-foreground/40 focus:border-foreground/20 sm:text-sm"
+          className="w-full rounded-md border border-border/60 bg-[#c1bebe2d] bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-3 py-1.5 font-mono text-xs text-foreground outline-none transition-colors placeholder:text-muted-foreground/40 focus:border-foreground/20 dark:bg-[#a8a29e12] sm:text-sm"
           spellCheck={false}
         />
       </div>
 
       {/* Output */}
-      <div className="px-5 py-4">
+      <div className="px-4 py-3">
         {/* Result line */}
         {binaryOutput && (
-          <div className="mb-4 rounded-md bg-foreground/[0.03] bg-[url(/noise-compressed.png)] bg-[size:auto_50px] px-4 py-2.5 dark:bg-foreground/[0.05]">
+          <div className="mb-3 rounded-md border border-border/40 bg-[#c1bebe2d] px-3.5 py-2 dark:bg-[#a8a29e12]">
             <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
               {mode === "encode" ? "Binary output" : "Decoded text"}
             </span>

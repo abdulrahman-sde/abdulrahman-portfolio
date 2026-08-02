@@ -8,6 +8,7 @@ export interface Technology {
 export interface Project {
   slug: string;
   title: string;
+  subtitle?: string;
   description: string;
   image: StaticImageData;
   technologies: Technology[];
@@ -15,6 +16,9 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   githubUrlFrontend?: string;
+  logo?: string;
   isApp?: boolean;
   featured?: boolean;
+  postedDate?: string;
+  badges?: string[];
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { ProjectCard } from "@/components/core/projects/ProjectCard";
+import { ProjectGrid } from "@/components/core/projects/ProjectGrid";
 import { projects } from "@/constants/projects";
 import { siteConfig } from "@/constants/site";
 import {
@@ -11,16 +11,16 @@ import {
 } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Projects — Full-Stack & AI Developer Portfolio",
+  title: "Projects - Full-Stack & AI Developer Portfolio",
   description:
-    "Explore full-stack and AI projects by Abdul Rahman Asif — agentic AI pipelines, RAG systems, React Native mobile apps, Next.js web applications, and developer tools. Software engineer portfolio showcasing production-grade work.",
+    "Explore full-stack and AI projects by Abdul Rahman Asif including agentic AI pipelines, RAG systems, React Native mobile apps, Next.js web applications, and developer tools. Software engineer portfolio showcasing production-grade work.",
   alternates: {
     canonical: `${siteConfig.url}/projects`,
   },
   openGraph: {
-    title: "Projects — Abdul Rahman Asif | Full-Stack & AI Portfolio",
+    title: "Projects - Abdul Rahman Asif | Full-Stack & AI Portfolio",
     description:
-      "Full-stack and AI projects — from agentic pipelines and RAG systems to mobile apps and VS Code themes.",
+      "Full-stack and AI projects from agentic pipelines and RAG systems to mobile apps and VS Code themes.",
     url: `${siteConfig.url}/projects`,
     type: "website",
   },
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
           className="animate-fade-in  mb-10 max-w-md text-muted-foreground leading-relaxed"
           style={{ animationDelay: "80ms" }}
         >
-          A collection of things I&apos;ve built — AI agents, full-stack apps,
+          A collection of things I&apos;ve built: AI agents, full-stack apps,
           mobile experiences, and developer tools.
         </p>
 
@@ -45,17 +45,7 @@ export default function ProjectsPage() {
           className="mb-12 animate-fade-in "
           style={{ animationDelay: "160ms" }}
         >
-          <div className="grid gap-6 md:grid-cols-2">
-            {projects.map((project, i) => (
-              <div
-                key={project.slug}
-                className="animate-fade-in "
-                style={{ animationDelay: `${240 + i * 80}ms` }}
-              >
-                <ProjectCard project={project} />
-              </div>
-            ))}
-          </div>
+          <ProjectGrid projects={projects} />
         </div>
       </Container>
 

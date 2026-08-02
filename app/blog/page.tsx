@@ -7,14 +7,14 @@ import { siteConfig } from "@/constants/site";
 import { JsonLd, getBreadcrumbSchema, getBlogCollectionSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Blog — Engineering Insights & Software Development",
+  title: "Blog - Engineering Insights & Software Development",
   description:
     "Read engineering articles by Abdul Rahman Asif on full-stack development, React, Next.js, AI integrations, and software architecture. Practical insights from a working software engineer.",
   alternates: {
     canonical: `${siteConfig.url}/blog`,
   },
   openGraph: {
-    title: "Blog — Abdul Rahman Asif | Engineering & Development",
+    title: "Blog - Abdul Rahman Asif | Engineering & Development",
     description:
       "Practical engineering articles on code, design, architecture, and the craft of building software.",
     url: `${siteConfig.url}/blog`,

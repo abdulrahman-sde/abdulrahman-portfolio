@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/_next/"],
       },
-      // AI Search Engine Bots — explicitly allow for AI SEO
+      // AI Search Engine Bots - explicitly allow for AI SEO
       {
         userAgent: "GPTBot",
         allow: "/",

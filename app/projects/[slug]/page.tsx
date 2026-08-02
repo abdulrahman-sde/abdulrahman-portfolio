@@ -28,7 +28,7 @@ export async function generateMetadata({
   const project = projects.find((p) => p.slug === slug);
   if (!project) return {};
 
-  const title = `${project.title} — Case Study | Abdul Rahman Asif`;
+  const title = `${project.title} - Case Study | Abdul Rahman Asif`;
   const description = `${project.description.slice(0, 155)}…`;
   const url = `${siteConfig.url}/projects/${slug}`;
 
@@ -49,7 +49,7 @@ export async function generateMetadata({
               url: siteConfig.ogImage,
               width: 1200,
               height: 630,
-              alt: `${project.title} — Project by ${siteConfig.fullName}`,
+              alt: `${project.title} - Project by ${siteConfig.fullName}`,
             },
           ]
         : undefined,

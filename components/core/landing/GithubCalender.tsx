@@ -20,14 +20,14 @@ const transformToLastMonths = (data: Activity[]) => {
 // Pulled directly from your CSS variables
 const explicitTheme = {
   light: [
-    "#f5f5f4", // empty — matches --muted
+    "#f5f5f4", // empty - matches --muted
     "#e7e5e4", // --border
     "#d6d3d1", // stone-300
     "#a8a29e", // stone-400
     "#78716c", // --accent (max)
   ],
   dark: [
-    "#29252484", // empty — matches --border dark (slightly visible)
+    "#29252484", // empty - matches --border dark (slightly visible)
     "#44403c", // stone-700
     "#57534e", // stone-600
     "#78716c", // stone-500

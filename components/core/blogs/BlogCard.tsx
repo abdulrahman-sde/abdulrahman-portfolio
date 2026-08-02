@@ -42,7 +42,7 @@ export function BlogCard({ post }: BlogCardProps) {
         </div>
       </div>
 
-      {/* Arrow — slides in + fades on hover */}
+      {/* Arrow - slides in + fades on hover */}
       <div
         aria-hidden="true"
         className="mt-0.5 shrink-0 translate-x-0 text-muted-foreground opacity-0 transition-[transform,opacity] duration-200 group-hover:translate-x-1 group-hover:opacity-100"
