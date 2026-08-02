@@ -32,7 +32,7 @@ const components: MDXComponents = {
   ),
   p: (props) => (
     <p
-      className="mb-5 max-w-[593px] text-[15px] leading-[1.8] text-foreground/80"
+      className="mb-5 text-[15px] leading-[1.8] text-foreground/80"
       {...props}
     />
   ),
