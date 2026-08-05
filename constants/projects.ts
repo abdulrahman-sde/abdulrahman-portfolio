@@ -19,7 +19,7 @@ export const projects: Project[] = [
       "A visual workflow automation platform with a drag-and-drop node editor. Connect apps, trigger actions, and automate processes without code, powered by tRPC, Prisma, PostgreSQL, and Inngest background jobs.",
     image: triggerlyImg,
     logo: "/assets/logos/projects/triggerly.svg",
-    liveUrl: "https://triggerly-six.vercel.app",
+    liveUrl: "https://www.triggerly.online/",
     githubUrl: "https://github.com/abdulrahman-sde/triggerly.git",
     technologies: [
       { name: "Next.js", icon: "/assets/icons/skills/nextjs.png" },

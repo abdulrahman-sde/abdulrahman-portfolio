@@ -1,4 +1,5 @@
 import { SectionHeader } from "@/components/shared/SectionHeader";
+import { CursorCard } from "@/components/ui/cursor-card";
 
 export function AboutSection() {
   const baseDelay = 480;
@@ -24,8 +25,16 @@ export function AboutSection() {
           style={{ animationDelay: `${baseDelay + 160}ms` }}
         >
           I enjoy building products that are technically solid, thoughtfully
-          designed, and genuinely useful. That mindset is reflected in Kairo UI,
-          an open-source landing page library used by{" "}
+          designed, and genuinely useful. That mindset is reflected in{" "}
+          <CursorCard
+            className="hover:bg-neutral-300"
+            href="https://kairoui.online"
+            image="/assets/images/kairoui.png"
+            description="Free landing page templates collection for Next.js."
+          >
+            Kairo Ui
+          </CursorCard>
+          , an open-source landing page library used by{" "}
           <strong>3,000+ developers</strong> showcasing my focus on clean,
           reusable systems and exceptional developer experience.
         </p>
