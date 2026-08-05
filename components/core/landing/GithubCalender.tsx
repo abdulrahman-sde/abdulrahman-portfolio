@@ -36,8 +36,8 @@ const explicitTheme = {
 };
 
 export default function GithubCalendar() {
-  const { theme } = useTheme();
-  const isDark = theme === "dark";
+  const { resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
 
   return (
     <div className="mb-2 w-full rounded-xl p-4">
