@@ -25,7 +25,7 @@ export function AboutSection() {
           style={{ animationDelay: `${baseDelay + 160}ms` }}
         >
           I enjoy building products that are technically solid, thoughtfully
-          designed, and genuinely useful. That mindset is reflected in{" "}
+          designed, and genuinely useful. That's reflected in{" "}
           <CursorCard
             className="hover:bg-neutral-300"
             href="https://kairoui.online"
